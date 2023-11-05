@@ -1,8 +1,8 @@
 import React from "react";
 import { View, Text, TouchableOpacity } from "react-native";
 import Ionicons from "@expo/vector-icons/Ionicons";
-import { NavigationProp } from '../../models/types';
-import { useNavigation } from '@react-navigation/native';
+import { NavigationProp } from "../../models/types";
+import { useNavigation } from "@react-navigation/native";
 
 interface Button {
   title: string;
@@ -10,35 +10,40 @@ interface Button {
   icon: any;
 }
 
-export default function NivelAutonomiaScreen() {
+export default function NormasRotinasScreen() {
   const navigation = useNavigation<NavigationProp>();
   const buttons: Button[] = [
-    { title: "Legilação", route: "Legislacao", icon: "book" },
-    { title: "Normas e Rotinas", route: "NormasRotinas", icon: "list" },
-    { title: "Protocolo de Saúde", route: "`ProtocoloSaude`", icon: "medkit" },
-    { title: "Nível de Autonomia", route: "NivelAutonomia", icon: "bar-chart" },
-    { title: "Fale com a DSP", route: "FaleDSP", icon: "call" },
+    { title: "Regimento de Enfermagem", route: "RegimentoEnfermagem", icon: "arrow-forward" },
+    { title: "POP Enfermagem", route: "POPEnfermagem", icon: "arrow-forward" },
+    {
+      title: "Manual de Transporte",
+      route: "ManualTransporte",
+      icon: "arrow-forward",
+    },
+    { title: "Guia de Atenção Primária", route: "GuiaAtencaoPrimaria", icon: "arrow-forward" },
   ];
-  
+
   return (
-    
-    <View className="flex-1 flex-row flex-wrap h-screen gap-6 items-center justify-center content-center">
+    <View className="flex-1 flex-row flex-wrap h-screen items-center justify-center content-center m-4">
       {buttons.map((button, index) => (
         <TouchableOpacity
           key={index}
-          className="bg-white rounded-lg shadow-lg items-center justify-center w-36 h-36"
-          onPress={() => {navigation.navigate(button.route)
-        }}
+          className="bg-white rounded-lg shadow-lg w-full p-3 m-3"
+          onPress={() => {
+            navigation.navigate(button.route);
+          }}
         >
-          <Ionicons
-            name={button.icon}
-            size={40}
-            color="green"
-            className="mr-3"
-          />
-          <Text className="text-black text-lg font-semibold">
-            {button.title}
-          </Text>
+          <View className="flex flex-row items-center justify-between">
+            <Text className="text-black text-lg font-semibold text-left">
+              {button.title}
+            </Text>
+            <Ionicons
+              name={button.icon}
+              size={40}
+              color="green"
+              className="mr-3 basis-1/2"
+            />
+          </View>
         </TouchableOpacity>
       ))}
     </View>

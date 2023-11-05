@@ -15,6 +15,8 @@ export type RootStackParamList = {
   LeiExercicioProfissional: undefined;
   PNAISP: undefined;
   ResolucaoCargaHoraria: undefined;
+  RegimentoEnfermagem: undefined;
+  Tuberculose: undefined;
   // adicione outras rotas aqui
 };
 

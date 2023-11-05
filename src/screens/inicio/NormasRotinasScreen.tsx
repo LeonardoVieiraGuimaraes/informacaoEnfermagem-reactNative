@@ -13,19 +13,14 @@ interface Button {
 export default function NormasRotinasScreen() {
   const navigation = useNavigation<NavigationProp>();
   const buttons: Button[] = [
-    { title: "RENP", route: "RENP", icon: "arrow-forward" },
-    { title: "LEP", route: "LEP", icon: "arrow-forward" },
+    { title: "Regimento de Enfermagem", route: "RegimentoEnfermagem", icon: "arrow-forward" },
+    { title: "POP Enfermagem", route: "POPEnfermagem", icon: "arrow-forward" },
     {
-      title: "Lei do Exercício Profissional",
-      route: "LeiExercicioProfissional",
+      title: "Manual de Transporte",
+      route: "ManualTransporte",
       icon: "arrow-forward",
     },
-    { title: "PNAISP", route: "PNAISP", icon: "arrow-forward" },
-    {
-      title: "Resolução de Carga Horária",
-      route: "ResolucaoCargaHoraria",
-      icon: "arrow-forward",
-    },
+    { title: "Guia de Atenção Primária", route: "GuiaAtencaoPrimaria", icon: "arrow-forward" },
   ];
 
   return (
@@ -46,7 +41,7 @@ export default function NormasRotinasScreen() {
               name={button.icon}
               size={40}
               color="green"
-              className="mr-3 basis-1/2"
+              className="mr-3"
             />
           </View>
         </TouchableOpacity>

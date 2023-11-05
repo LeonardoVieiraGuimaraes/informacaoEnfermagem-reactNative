@@ -9,11 +9,13 @@ import NormasRotinasScreen from "../screens/inicio/NormasRotinasScreen";
 import ProtocolosSaudeScreen from "../screens/inicio/ProtocolosSaudeScreen";
 import NivelAutonomiaScreen from "../screens/inicio/NivelAutonomiaScreen";
 import FaleDSPScreen from "../screens/inicio/FaleDSPScreen";
-import RENPScreen from "../screens/legislacao/RENPScreen";
-import LEPScreen from "../screens/legislacao/LEPScreen";
-import LeiExercicoProfissionalScreen from "../screens/legislacao/LeiExercicoProfissionalScreen";
-import PNAISPScreen from "../screens/legislacao/PNAISPScreen";
-import ResolucaoCargaHorariaScreen from "../screens/legislacao/ResolucaoCargaHorariaScreen";
+import RENPScreen from "../screens/inicio/legislacao/RENPScreen";
+import LEPScreen from "../screens/inicio/legislacao/LEPScreen";
+import LeiExercicoProfissionalScreen from "../screens/inicio/legislacao/LeiExercicoProfissionalScreen";
+import PNAISPScreen from "../screens/inicio/legislacao/PNAISPScreen";
+import ResolucaoCargaHorariaScreen from "../screens/inicio/legislacao/ResolucaoCargaHorariaScreen";
+import RegimentoEnfermagemSceen from "../screens/inicio/normasRotinas/RegimentoEnfermagemScreen";
+import TuberculoseScreen from "../screens/inicio/protocoloSaude/TuberculoseScreen";
 
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
@@ -40,6 +42,16 @@ export default function StackRoutes() {
       <Stack.Screen name="LeiExercicioProfissional" component={LeiExercicoProfissionalScreen} />
       <Stack.Screen name="PNAISP" component={PNAISPScreen} />
       <Stack.Screen name="ResolucaoCargaHoraria" component={ResolucaoCargaHorariaScreen} />
+
+      {/* Normas e Rotinas */}
+      <Stack.Screen name="RegimentoEnfermagem" component={RegimentoEnfermagemSceen} />
+      
+
+      {/* Protocolos de Saúde */}
+      <Stack.Screen name="Tuberculose" component={TuberculoseScreen} />
+      {/* Nível de Autonomia */}
+
+      {/* Fale com o DSP */}
       
     </Stack.Navigator>
   );
