@@ -3,7 +3,7 @@ import { View, Text, TouchableOpacity } from "react-native";
 import Ionicons from "@expo/vector-icons/Ionicons";
 import { NavigationProp } from "../../models/types";
 import { useNavigation } from "@react-navigation/native";
-
+import styles from "../../style/utils";
 interface Button {
   title: string;
   route: any;
@@ -28,7 +28,7 @@ export default function NormasRotinasScreen() {
       {buttons.map((button, index) => (
         <TouchableOpacity
           key={index}
-          className="bg-white rounded-lg shadow-lg w-full p-3 m-3"
+          className={styles.button}
           onPress={() => {
             navigation.navigate(button.route);
           }}
