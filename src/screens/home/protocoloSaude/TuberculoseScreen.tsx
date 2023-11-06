@@ -1,14 +1,14 @@
-import React from "react";
-import { View, Text, TouchableOpacity } from "react-native";
-import Ionicons from "@expo/vector-icons/Ionicons";
-import { useState } from "react";
+import React from 'react';
+import { View, Text, TouchableOpacity } from 'react-native';
+import Ionicons from '@expo/vector-icons/Ionicons';
+import { useState } from 'react';
 
-import BuscaAtiva from "./tuberculose/BuscaAtiva";
-import Diagnostico from "./tuberculose/Diagnostico";
-import Isolamento from "./tuberculose/Isolamento";
-import Tratamento from "./tuberculose/Tratamento";
-import OrientacaoTranferencia from "./tuberculose/OrientacaoTranferencia";
-import ButtonDropDown from "../../../components/ButtonDropDown";
+import BuscaAtiva from './tuberculose/BuscaAtiva';
+import Diagnostico from './tuberculose/Diagnostico';
+import Isolamento from './tuberculose/Isolamento';
+import Tratamento from './tuberculose/Tratamento';
+import OrientacaoTranferencia from './tuberculose/OrientacaoTranferencia';
+import ButtonDropDown from '../../../components/ButtonDropDown';
 
 interface Button {
   title: string;
@@ -24,19 +24,55 @@ export default function NormasRotinasScreen() {
   const [isOpenDiagnostico, setIsOpenDiagnostico] = useState(false);
   const [isOpenFichaFuncional, setIsOpenFichaFuncional] = useState(false);
   const [isOpenTratamento, setIsOpenTratamento] = useState(false);
-  const [isOpenOrientacaoTranferencia, setIsOpenOrientacaoTranferencia] = useState(false);
+  const [isOpenOrientacaoTranferencia, setIsOpenOrientacaoTranferencia] =
+    useState(false);
 
   const buttons: Button[] = [
-    { title: "Busca Ativa", isOpen: isOpenBuscaAtiva, setIsOpen: setIsOpenBuscaAtiva,  icon_down: "arrow-down", icon_up :"arrow-up", informacao: <BuscaAtiva /> },
-    { title: "Diagnóstico", isOpen: isOpenDiagnostico, setIsOpen: setIsOpenDiagnostico, icon_down: "arrow-down", icon_up :"arrow-up", informacao: < Diagnostico/> }, 
-    { title: "Isolamento", isOpen: isOpenFichaFuncional, setIsOpen: setIsOpenFichaFuncional, icon_down: "arrow-down", icon_up :"arrow-up", informacao: < Isolamento/> },
-    { title: "Tratamento", isOpen: isOpenTratamento, setIsOpen: setIsOpenTratamento, icon_down: "arrow-down", icon_up :"arrow-up", informacao: < Tratamento /> },
-    { title: "Orientacao para Tranferencia", isOpen: isOpenOrientacaoTranferencia, setIsOpen: setIsOpenOrientacaoTranferencia, icon_down: "arrow-down", icon_up :"arrow-up", informacao: < OrientacaoTranferencia /> }
+    {
+      title: 'Busca Ativa',
+      isOpen: isOpenBuscaAtiva,
+      setIsOpen: setIsOpenBuscaAtiva,
+      icon_down: 'arrow-down',
+      icon_up: 'arrow-up',
+      informacao: <BuscaAtiva />,
+    },
+    {
+      title: 'Diagnóstico',
+      isOpen: isOpenDiagnostico,
+      setIsOpen: setIsOpenDiagnostico,
+      icon_down: 'arrow-down',
+      icon_up: 'arrow-up',
+      informacao: <Diagnostico />,
+    },
+    {
+      title: 'Isolamento',
+      isOpen: isOpenFichaFuncional,
+      setIsOpen: setIsOpenFichaFuncional,
+      icon_down: 'arrow-down',
+      icon_up: 'arrow-up',
+      informacao: <Isolamento />,
+    },
+    {
+      title: 'Tratamento',
+      isOpen: isOpenTratamento,
+      setIsOpen: setIsOpenTratamento,
+      icon_down: 'arrow-down',
+      icon_up: 'arrow-up',
+      informacao: <Tratamento />,
+    },
+    {
+      title: 'Orientacao para Tranferencia',
+      isOpen: isOpenOrientacaoTranferencia,
+      setIsOpen: setIsOpenOrientacaoTranferencia,
+      icon_down: 'arrow-down',
+      icon_up: 'arrow-up',
+      informacao: <OrientacaoTranferencia />,
+    },
   ];
 
   return (
     <View className="flex-1 flex-row flex-wrap bg-blue-50">
-    {ButtonDropDown(buttons)}
-  </View>
+      {ButtonDropDown(buttons)}
+    </View>
   );
 }

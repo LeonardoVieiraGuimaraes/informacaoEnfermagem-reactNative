@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import {
   View,
   Text,
@@ -6,12 +6,12 @@ import {
   StyleSheet,
   Linking,
   TouchableHighlight,
-} from "react-native";
+} from 'react-native';
 
 function ScreenLeiExercicoProfissional() {
   const openLink = () => {
     const url =
-      "http://www.cofen.gov.br/lei-n-749886-de-25-de-junho-de-1986 4161.html";
+      'http://www.cofen.gov.br/lei-n-749886-de-25-de-junho-de-1986 4161.html';
     Linking.openURL(url);
   };
 
@@ -28,7 +28,6 @@ function ScreenLeiExercicoProfissional() {
           http://www.cofen.gov.br/lei-n-749886-de-25-de-junho-de-1986 4161.html
         </Text>
       </TouchableHighlight>
-    
     </View>
   );
 }
@@ -36,20 +35,20 @@ function ScreenLeiExercicoProfissional() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#00BF63", // Cor de fundo verde para a área de enfermagem 1
-    alignItems: "center",
-    justifyContent: "center",
+    backgroundColor: '#00BF63', // Cor de fundo verde para a área de enfermagem 1
+    alignItems: 'center',
+    justifyContent: 'center',
   },
   text: {
     fontSize: 24,
-    color: "black",
-    fontWeight: "bold",
+    color: 'black',
+    fontWeight: 'bold',
     padding: 20,
-    textAlign: "justify",
+    textAlign: 'justify',
   },
   link: {
-    color: "blue",
-    textDecorationLine: "underline",
+    color: 'blue',
+    textDecorationLine: 'underline',
   },
   // imagem: {
   //   width: 100, // Largura da imagem do botão
