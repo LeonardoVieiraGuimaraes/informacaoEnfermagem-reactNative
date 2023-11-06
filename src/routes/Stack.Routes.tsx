@@ -3,19 +3,19 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { RootStackParamList } from "../models/types";
 
 import HomeScreen from '../screens/HomeScreen';
-import InicioScreen from "../screens/home/InicioScreen";
-import LegislacaoScreen from '../screens/inicio/LegislacaoScreen';
-import NormasRotinasScreen from "../screens/inicio/NormasRotinasScreen";
-import ProtocolosSaudeScreen from "../screens/inicio/ProtocolosSaudeScreen";
-import NivelAutonomiaScreen from "../screens/inicio/NivelAutonomiaScreen";
-import FaleDSPScreen from "../screens/inicio/FaleDSPScreen";
-import RENPScreen from "../screens/inicio/legislacao/RENPScreen";
-import LEPScreen from "../screens/inicio/legislacao/LEPScreen";
-import LeiExercicoProfissionalScreen from "../screens/inicio/legislacao/LeiExercicoProfissionalScreen";
-import PNAISPScreen from "../screens/inicio/legislacao/PNAISPScreen";
-import ResolucaoCargaHorariaScreen from "../screens/inicio/legislacao/ResolucaoCargaHorariaScreen";
-import RegimentoEnfermagemSceen from "../screens/inicio/normasRotinas/RegimentoEnfermagemScreen";
-import TuberculoseScreen from "../screens/inicio/protocoloSaude/TuberculoseScreen";
+// import InicioScreen from "../screens/home/InicioScreen";
+import LegislacaoScreen from '../screens/home/LegislacaoScreen';
+import NormasRotinasScreen from "../screens/home/NormasRotinasScreen";
+import ProtocolosSaudeScreen from "../screens/home/ProtocolosSaudeScreen";
+import NivelAutonomiaScreen from "../screens/home/NivelAutonomiaScreen";
+import FaleDSPScreen from "../screens/home/FaleDSPScreen";
+import RENPScreen from "../screens/home/legislacao/RENPScreen";
+import LEPScreen from "../screens/home/legislacao/LEPScreen";
+import LeiExercicoProfissionalScreen from "../screens/home/legislacao/LeiExercicoProfissionalScreen";
+import PNAISPScreen from "../screens/home/legislacao/PNAISPScreen";
+import ResolucaoCargaHorariaScreen from "../screens/home/legislacao/ResolucaoCargaHorariaScreen";
+import RegimentoEnfermagemSceen from "../screens/home/normasRotinas/RegimentoEnfermagemScreen";
+import TuberculoseScreen from "../screens/home/protocoloSaude/TuberculoseScreen";
 
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
@@ -27,7 +27,7 @@ export default function StackRoutes() {
       <Stack.Screen name="HomeStack" component={HomeScreen} /> 
 
       {/* Router tela home */}
-      <Stack.Screen name="Inicio" component={InicioScreen} />
+      {/* <Stack.Screen name="Inicio" component={InicioScreen} /> */}
 
       {/* Router tela Inicio */}
       <Stack.Screen name="Legislacao" component={LegislacaoScreen} />

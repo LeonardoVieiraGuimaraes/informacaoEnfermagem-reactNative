@@ -3,14 +3,12 @@ import { View, Text, TouchableOpacity } from "react-native";
 import Ionicons from "@expo/vector-icons/Ionicons";
 import { useState } from "react";
 
-
-
 import BuscaAtiva from "./tuberculose/BuscaAtiva";
 import Diagnostico from "./tuberculose/Diagnostico";
 import Isolamento from "./tuberculose/Isolamento";
 import Tratamento from "./tuberculose/Tratamento";
 import OrientacaoTranferencia from "./tuberculose/OrientacaoTranferencia";
-
+import ButtonDropDown from "../../../components/ButtonDropDown";
 
 interface Button {
   title: string;
@@ -37,26 +35,8 @@ export default function NormasRotinasScreen() {
   ];
 
   return (
-   <View className="flex-1 flex-row flex-wrap bg-blue-50">
-      {buttons.map((button, index) => (
-        <View
-          key={index}
-          className="shadow-lg w-full p-3 bg-blue-50"
-          >
-          <TouchableOpacity key={index} onPress={() => button.setIsOpen(!button.isOpen)}>
-          <View className="flex flex-row justify-between bg-blue-100 p-3 rounded-lg">
-            
-            <Text className="text-black text-lg font-semibold text-left">
-              {button.title}
-            </Text>
-            <Ionicons name={button.isOpen ? button.icon_up : button.icon_down} size={24} color="green" />
-          </View >
-          </TouchableOpacity>
-          {button.isOpen && <Text className="text-black font-semibold text-justify m-2">{button.informacao}</Text>}
-        </View>
-      ))}
-    </View>
+    <View className="flex-1 flex-row flex-wrap bg-blue-50">
+    {ButtonDropDown(buttons)}
+  </View>
   );
 }
-
-// style={{ color: 'black', fontSize: 18, fontWeight: 'bold', textAlign: 'left' }}

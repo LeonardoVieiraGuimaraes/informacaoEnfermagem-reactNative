@@ -1,29 +1,14 @@
 import React from "react";
 import { View, Text, TouchableOpacity } from "react-native";
 import Ionicons from "@expo/vector-icons/Ionicons";
-import { NavigationProp } from "../../models/types";
+import { NavigationProp } from "../models/types";
 import { useNavigation } from "@react-navigation/native";
 
-interface Button {
-  title: string;
-  route: any;
-  icon: any;
-}
-
-export default function ProtocolosSaudeScreen() {
+export default function buttonDropDown(buttons: any[]) {
   const navigation = useNavigation<NavigationProp>();
-  const buttons: Button[] = [
-    { title: "Tuberculose", route: "Tuberculose", icon: "arrow-forward" },
-    { title: "IST-HIV-Aids", route: "ISTHIVAids", icon: "arrow-forward" },
-    {
-      title: "Escabiose",
-      route: "Escabiose",
-      icon: "arrow-forward",
-    },
-  ];
 
   return (
-    <View className="flex-1 flex-row flex-wrap h-screen items-center justify-center content-center m-4">
+    <View className="flex-1 flex-row flex-wrap h-screen items-center justify-center m-4">
       {buttons.map((button, index) => (
         <TouchableOpacity
           key={index}

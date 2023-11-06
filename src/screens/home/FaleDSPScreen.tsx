@@ -1,6 +1,7 @@
 import React from "react";
 import { View, Text, TouchableOpacity } from "react-native";
 import Ionicons from "@expo/vector-icons/Ionicons";
+import ButtonSecond from "../../components/ButtonSecond";
 
 interface Button {
   title: string;
@@ -18,24 +19,8 @@ export default function FaleDSPScreen() {
   ];
 
   return (
-    <View className="flex-1 flex-row flex-wrap h-screen gap-6 items-center justify-center content-center">
-      {buttons.map((button, index) => (
-        <TouchableOpacity
-          key={index}
-          className="bg-white rounded-lg shadow-lg items-center justify-center w-36 h-36"
-          onPress={() => console.log(`Navegando para ${button.route}`)}
-        >
-          <Ionicons
-            name={button.icon}
-            size={40}
-            color="green"
-            className="mr-3"
-          />
-          <Text className="text-black text-lg font-semibold">
-            {button.title}
-          </Text>
-        </TouchableOpacity>
-      ))}
+    <View className="flex-1 flex-row flex-wrap bg-blue-50">
+      {ButtonSecond(buttons)}
     </View>
   );
 }
