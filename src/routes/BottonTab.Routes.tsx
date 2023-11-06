@@ -13,13 +13,13 @@ interface Screen {
 
 const screens: Screen[] = [
   { name: 'Home', component: StackRoutes, icon: 'home' },
-  { name: 'About', component: AboutScreen, icon: 'infocirlceo' },
+  { name: 'Sobre', component: AboutScreen, icon: 'infocirlceo' },
 ];
 const Tab = createMaterialBottomTabNavigator();
 
 export default function BottomTabsRoutes() {
   return (
-    <Tab.Navigator barStyle={{ height: 80 }}>
+    <Tab.Navigator barStyle={{ height: 90 }}>
       {screens.map((screen, index) => (
         <Tab.Screen
           key={index}
@@ -27,7 +27,7 @@ export default function BottomTabsRoutes() {
           component={screen.component}
           options={{
             tabBarIcon: () => (
-              <AntDesign name={screen.icon} size={30} color="green" />
+              <AntDesign name={screen.icon} size={28} color="green" />
             ),
           }}
         />

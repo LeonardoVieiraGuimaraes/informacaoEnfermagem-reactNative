@@ -1,6 +1,5 @@
 import React from 'react';
 import { View, Text, TouchableOpacity } from 'react-native';
-import Ionicons from '@expo/vector-icons/Ionicons';
 import { NavigationProp } from '../../models/types';
 import { useNavigation } from '@react-navigation/native';
 import ButtonSecond from '../../components/ButtonSecond';

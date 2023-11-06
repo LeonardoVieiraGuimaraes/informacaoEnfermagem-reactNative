@@ -11,7 +11,7 @@ interface Button {
   icon: any;
 }
 
-export default function InicioScreen() {
+export default function HomeScreen() {
   const navigation = useNavigation<NavigationProp>();
   const buttons: Button[] = [
     { title: 'Legilação', route: 'Legislacao', icon: 'book' },
@@ -22,7 +22,7 @@ export default function InicioScreen() {
   ];
 
   return (
-    <View className="flex-1 flex-row flex-wrap bg-blue-50">
+    <View className="flex-1 flex-row flex-wrap bg-blue-50 p-10">
       {ButtonPrimary(buttons)}
     </View>
   );
