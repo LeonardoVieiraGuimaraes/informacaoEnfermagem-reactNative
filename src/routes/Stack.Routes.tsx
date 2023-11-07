@@ -16,6 +16,8 @@ import PNAISPScreen from '../screens/home/legislacao/PNAISPScreen';
 import ResolucaoCargaHorariaScreen from '../screens/home/legislacao/ResolucaoCargaHorariaScreen';
 import RegimentoEnfermagemSceen from '../screens/home/normasRotinas/RegimentoEnfermagemScreen';
 import TuberculoseScreen from '../screens/home/protocoloSaude/TuberculoseScreen';
+import ISTHIVAidsScreen from '../screens/home/protocoloSaude/ISTHIVAidsScreen';
+import EscabioseScreen from '../screens/home/protocoloSaude/EscabioseScreen';
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
 
@@ -86,6 +88,16 @@ export default function StackRoutes() {
         name="Tuberculose"
         component={TuberculoseScreen}
         options={{ title: 'Tuberculose' }}
+      />
+      <Stack.Screen
+        name="ISTHIVAids"
+        component={ISTHIVAidsScreen}
+        options={{ title: 'ISTHIVAids' }}
+      />
+      <Stack.Screen
+        name="Escabiose"
+        component={EscabioseScreen}
+        options={{ title: 'Escabiose' }}
       />
     </Stack.Navigator>
   );

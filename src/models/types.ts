@@ -17,6 +17,8 @@ export type RootStackParamList = {
   ResolucaoCargaHoraria: undefined;
   RegimentoEnfermagem: undefined;
   Tuberculose: undefined;
+  ISTHIVAids: undefined;
+  Escabiose: undefined;
   // adicione outras rotas aqui
 };
 
