@@ -8,11 +8,11 @@ interface Button {
   route: String;
 }
 
-export default function RENP() {
+export default function PNAISP() {
   const buttons: Button[] = [
     {
-      title: 'RENP',
-      route: 'RENP',
+      title: 'PNAISP',
+      route: 'PNAISP',
     },
   ];
   return (

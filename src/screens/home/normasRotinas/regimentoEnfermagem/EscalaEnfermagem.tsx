@@ -1,20 +1,30 @@
-import { Text, TouchableOpacity, Linking, View } from 'react-native';
+import React from 'react';
+import { Text, View } from 'react-native';
+import ButtonArrowforward from '../../../../components/ButtonArrowforward';
 
-export default function EscalaEnfermagem() {
-  const handlePress = () => {
-    Linking.openURL(
-      'https://docs.google.com/document/d/1WqbP0jh_TbjhgX5HwZuoLUEaTc4rXoy-/edit?usp=sharing&ouid=116778489310709069261&rtpof=true&sd=true',
-    );
-  };
+interface Button {
+  title: string;
+  route: String;
+}
 
+export default function PNAISP() {
+  const buttons: Button[] = [
+    {
+      title: 'Escala de Enfermagem',
+      route: 'EscalaEnfermagem',
+    },
+  ];
   return (
-    <View className="flex-1  flex-row">
-      <TouchableOpacity
-        onPress={handlePress}
-        className="bg-blue-100 p-3 rounded-lg"
-      >
-        <Text className="text-black font-semibold ">Escala Enfermagem</Text>
-      </TouchableOpacity>
+    <View>
+      <Text className="text-black text-lg font-semibold text-justify">
+        "A importância do Regimento Interno do Serviço de Enfermagem como
+        instrumento de gestão é inegável, uma vez que não apenas orienta o
+        processo de trabalho da equipe, como também atende aos aspectos legais
+        necessários ao seu funcionamento. A efetiva utilização deste documento
+        contribui significativamente para a qualidade dos cuidados prestados e
+        segurança dos pacientes."
+      </Text>
+      {ButtonArrowforward(buttons)}
     </View>
   );
 }

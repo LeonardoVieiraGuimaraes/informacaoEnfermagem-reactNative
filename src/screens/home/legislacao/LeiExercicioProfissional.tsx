@@ -8,11 +8,11 @@ interface Button {
   route: String;
 }
 
-export default function RENP() {
+export default function LeiExercicioProfissional() {
   const buttons: Button[] = [
     {
-      title: 'RENP',
-      route: 'RENP',
+      title: 'Lei do Exercico Profissional',
+      route: 'LeiExercicoProfissional',
     },
   ];
   return (

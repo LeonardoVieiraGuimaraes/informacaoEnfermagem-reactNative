@@ -1,18 +1,17 @@
 import React from 'react';
 import { Text, View } from 'react-native';
 import ButtonArrowforward from '../../../components/ButtonArrowforward';
-import styles from '../../../../assets/style/utils';
 
 interface Button {
   title: string;
   route: String;
 }
 
-export default function RENP() {
+export default function ResolucaoCargaHoraria() {
   const buttons: Button[] = [
     {
-      title: 'RENP',
-      route: 'RENP',
+      title: 'Resolucao de Carga Horaria',
+      route: 'ResolucaoCargaHoraria',
     },
   ];
   return (

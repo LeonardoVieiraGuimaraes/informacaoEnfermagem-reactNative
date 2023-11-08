@@ -1,11 +1,11 @@
 import React from 'react';
 import { WebView } from 'react-native-webview';
 
-export default function RENPcreen() {
+export default function LEPScreen() {
   return (
     <WebView
       source={{
-        uri: 'https://drive.google.com/file/d/1OsCUcW6wYuUPAkDcuf6Teo9_xcmvv4zj/view?usp=drive_link',
+        uri: 'https://www.planalto.gov.br/ccivil_03/leis/l7210.htm',
       }}
     />
   );

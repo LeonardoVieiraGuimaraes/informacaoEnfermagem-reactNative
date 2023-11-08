@@ -49,11 +49,7 @@ export default function NormasRotinas() {
     },
   ];
 
-  return (
-    <View className="flex-1 flex-row flex-wrap bg-blue-50">
-      {buttonDropDown(buttons)}
-    </View>
-  );
+  return <View>{buttonDropDown(buttons)}</View>;
 }
 
 // style={{ color: 'black', fontSize: 18, fontWeight: 'bold', textAlign: 'left' }}

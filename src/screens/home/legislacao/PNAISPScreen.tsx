@@ -1,11 +1,11 @@
 import React from 'react';
 import { WebView } from 'react-native-webview';
 
-export default function PNAISP() {
+export default function PNAISPScreen() {
   return (
     <WebView
       source={{
-        uri: 'https://drive.google.com/file/d/1VTRHwLGa-ejFh80eORLIL43LReurlmzh/view?usp=sharing',
+        uri: 'https://drive.google.com/file/d/1oRB9MayqD_P1ea07dkERhI5VR_5nwLET/view?usp=drive_link',
       }}
     />
   );

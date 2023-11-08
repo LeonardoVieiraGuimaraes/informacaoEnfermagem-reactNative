@@ -1,9 +1,6 @@
 import React from 'react';
 import { View } from 'react-native';
-import { NavigationProp } from '../models/types';
-import { useNavigation } from '@react-navigation/native';
 import ButtonHomeIcon from '../components/ButtonHomeIcon';
-import styles from '../../assets/style/utils';
 
 interface Button {
   title: string;
@@ -12,7 +9,6 @@ interface Button {
 }
 
 export default function HomeScreen() {
-  const navigation = useNavigation<NavigationProp>();
   const buttons: Button[] = [
     { title: 'Legilação', route: 'Legislacao', icon: 'book' },
     { title: 'Normas e Rotinas', route: 'NormasRotinas', icon: 'list' },
@@ -21,7 +17,5 @@ export default function HomeScreen() {
     { title: 'Fale com a DSP', route: 'FaleDSP', icon: 'call' },
   ];
 
-  return (
-    <View className={styles.viewScreenHome}>{ButtonHomeIcon(buttons)}</View>
-  );
+  return <View>{ButtonHomeIcon(buttons)}</View>;
 }

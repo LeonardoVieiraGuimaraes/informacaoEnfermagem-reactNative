@@ -21,5 +21,5 @@ export default function ProtocolosSaudeScreen() {
     },
   ];
 
-  return <View className={styles.viewScreen}>{ButtonSecond(buttons)}</View>;
+  return <View>{ButtonSecond(buttons)}</View>;
 }

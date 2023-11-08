@@ -1,20 +1,30 @@
-import { Text, TouchableOpacity, Linking, View } from 'react-native';
+import React from 'react';
+import { Text, View } from 'react-native';
+import ButtonArrowforward from '../../../../components/ButtonArrowforward';
+
+interface Button {
+  title: string;
+  route: String;
+}
 
 export default function FichaFuncional() {
-  const handlePress = () => {
-    Linking.openURL(
-      'https://docs.google.com/document/d/1ZxMIP2SeTRdjesNO22s5KQrmn5fo_iSz/edit?usp=sharing&ouid=116778489310709069261&rtpof=true&sd=true',
-    );
-  };
-
+  const buttons: Button[] = [
+    {
+      title: 'Ficha Funcional',
+      route: 'FichaFuncional',
+    },
+  ];
   return (
-    <View className="flex-1  flex-row">
-      <TouchableOpacity
-        onPress={handlePress}
-        className="bg-blue-100 p-3 rounded-lg"
-      >
-        <Text className="text-black font-semibold ">Ficha Funcional</Text>
-      </TouchableOpacity>
+    <View>
+      <Text className="text-black text-lg font-semibold text-justify">
+        "A importância do Regimento Interno do Serviço de Enfermagem como
+        instrumento de gestão é inegável, uma vez que não apenas orienta o
+        processo de trabalho da equipe, como também atende aos aspectos legais
+        necessários ao seu funcionamento. A efetiva utilização deste documento
+        contribui significativamente para a qualidade dos cuidados prestados e
+        segurança dos pacientes."
+      </Text>
+      {ButtonArrowforward(buttons)}
     </View>
   );
 }

@@ -7,7 +7,7 @@ import HomeScreen from '../screens/HomeScreen';
 
 interface Screen {
   name: string;
-  component: React.ComponentType;
+  component: any;
   icon: any;
 }
 
