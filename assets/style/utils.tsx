@@ -16,6 +16,9 @@ const styles = {
   // Estilo para campos de entrada de texto
   textInput:
     'tracking-widest bg-gray-100 rounded-lg w-[80%] text-base py-2 px-1 mx-5 mb-5',
+
+  viewScreen: 'flex-1 flex-row flex-wrap bg-blue-50',
+  viewScreenHome: 'flex-1 flex-row flex-wrap bg-blue-50 p-10',
 };
 
 export default styles;

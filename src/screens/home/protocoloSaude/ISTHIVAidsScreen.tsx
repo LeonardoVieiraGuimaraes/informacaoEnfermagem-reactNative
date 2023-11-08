@@ -9,6 +9,7 @@ import Tratamento from './tuberculose/Tratamento';
 import Prevencao from './isthivaids/Prevencao';
 import OrientacaoTranferencia from './isthivaids/OrientacaoTranferencia';
 import ButtonDropDown from '../../../components/ButtonDropDown';
+import styles from '../../../../assets/style/utils';
 
 interface Button {
   title: string;
@@ -73,9 +74,7 @@ export default function NormasRotinasScreen() {
 
   return (
     <ScrollView>
-      <View className="flex-1 flex-row flex-wrap bg-blue-50">
-        {ButtonDropDown(buttons)}
-      </View>
+      <View className={styles.viewScreen}>{ButtonDropDown(buttons)}</View>
     </ScrollView>
   );
 }

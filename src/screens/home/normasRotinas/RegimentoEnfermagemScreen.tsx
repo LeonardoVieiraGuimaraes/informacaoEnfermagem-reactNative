@@ -12,8 +12,6 @@ interface Button {
   title: string;
   setIsOpen: any;
   isOpen: boolean;
-  icon_up: any;
-  icon_down: any;
   informacao: any;
 }
 
@@ -29,32 +27,24 @@ export default function NormasRotinas() {
       title: 'Resumo',
       isOpen: isOpenResumo,
       setIsOpen: setIsOpenResumo,
-      icon_down: 'arrow-down',
-      icon_up: 'arrow-up',
       informacao: <Resumo />,
     },
     {
       title: 'Escala de Enfermagem',
       isOpen: isOpenEscalaEnfermagem,
       setIsOpen: setIsOpenEscalaEnfermagem,
-      icon_down: 'arrow-down',
-      icon_up: 'arrow-up',
       informacao: <EscalaEnfermagem />,
     },
     {
       title: 'Ficha Funcional',
       isOpen: isOpenFichaFuncional,
       setIsOpen: setIsOpenFichaFuncional,
-      icon_down: 'arrow-down',
-      icon_up: 'arrow-up',
       informacao: <FichaFuncional />,
     },
     {
       title: 'Regimento de Enfermagem',
       isOpen: isOpenRegimentoEnfermagem,
       setIsOpen: setIsOpenRegimentoEnfermagem,
-      icon_down: 'arrow-down',
-      icon_up: 'arrow-up',
       informacao: <RegimentoEnfermagem />,
     },
   ];

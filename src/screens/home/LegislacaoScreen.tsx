@@ -1,37 +1,61 @@
 import React from 'react';
-import { View, Text, TouchableOpacity } from 'react-native';
-import Ionicons from '@expo/vector-icons/Ionicons';
-import { NavigationProp } from '../../models/types';
-import { useNavigation } from '@react-navigation/native';
-import ButtonSecond from '../../components/ButtonSecond';
+import { View } from 'react-native';
+import { useState } from 'react';
+import buttonDropDown from '../../components/ButtonDropDown';
+import RENP from './legislacao/RENP';
+
+// import Resumo from './regimentoEnfermagem/Resumo';
+// import EscalaEnfermagem from './regimentoEnfermagem/EscalaEnfermagem';
+// import FichaFuncional from './regimentoEnfermagem/FichaFuncional';
+// import RegimentoEnfermagem from './regimentoEnfermagem/RegimentoEnfermagem';
+// import buttonDropDown from '../../../components/ButtonDropDown';
 
 interface Button {
   title: string;
-  route: any;
-  icon: any;
+  setIsOpen: any;
+  isOpen: boolean;
+  informacao: any;
 }
 
 export default function LegislacaoScreen() {
-  const navigation = useNavigation<NavigationProp>();
+  const [isOpenRENP, setIsOpenRENP] = useState(false);
+  // const [isOpenEscalaEnfermagem, setIsOpenEscalaEnfermagem] = useState(false);
+  // const [isOpenFichaFuncional, setIsOpenFichaFuncional] = useState(false);
+  // const [isOpenRegimentoEnfermagem, setIsOpenRegimentoEnfermagem] =
+  //   useState(false);
+
   const buttons: Button[] = [
-    { title: 'RENP', route: 'RENP', icon: 'arrow-forward' },
-    { title: 'LEP', route: 'LEP', icon: 'arrow-forward' },
     {
-      title: 'Lei do Exercício Profissional',
-      route: 'LeiExercicioProfissional',
-      icon: 'arrow-forward',
+      title: 'RENP',
+      isOpen: isOpenRENP,
+      setIsOpen: setIsOpenRENP,
+      informacao: <RENP />,
     },
-    { title: 'PNAISP', route: 'PNAISP', icon: 'arrow-forward' },
-    {
-      title: 'Resolução de Carga Horária',
-      route: 'ResolucaoCargaHoraria',
-      icon: 'arrow-forward',
-    },
+    // // {
+    //   title: 'Escala de Enfermagem',
+    //   isOpen: isOpenEscalaEnfermagem,
+    //   setIsOpen: setIsOpenEscalaEnfermagem,
+    //   informacao: <EscalaEnfermagem />,
+    // },
+    // {
+    //   title: 'Ficha Funcional',
+    //   isOpen: isOpenFichaFuncional,
+    //   setIsOpen: setIsOpenFichaFuncional,
+    //   informacao: <FichaFuncional />,
+    // },
+    // {
+    //   title: 'Regimento de Enfermagem',
+    //   isOpen: isOpenRegimentoEnfermagem,
+    //   setIsOpen: setIsOpenRegimentoEnfermagem,
+    //   informacao: <RegimentoEnfermagem />,
+    // },
   ];
 
   return (
     <View className="flex-1 flex-row flex-wrap bg-blue-50">
-      {ButtonSecond(buttons)}
+      {buttonDropDown(buttons)}
     </View>
   );
 }
+
+// style={{ color: 'black', fontSize: 18, fontWeight: 'bold', textAlign: 'left' }}

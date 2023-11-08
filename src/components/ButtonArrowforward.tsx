@@ -22,7 +22,7 @@ export default function buttonDropDown(buttons: any[]) {
               {button.title}
             </Text>
             <Ionicons
-              name={button.icon}
+              name={'arrow-forward'}
               size={40}
               color="green"
               className="mr-3 basis-1/2"

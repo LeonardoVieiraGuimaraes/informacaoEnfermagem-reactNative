@@ -1,9 +1,9 @@
 import React from 'react';
-import { View, Text, TouchableOpacity } from 'react-native';
-import Ionicons from '@expo/vector-icons/Ionicons';
+import { View } from 'react-native';
 import { NavigationProp } from '../models/types';
 import { useNavigation } from '@react-navigation/native';
-import ButtonPrimary from '../components/ButtonPrimary';
+import ButtonHomeIcon from '../components/ButtonHomeIcon';
+import styles from '../../assets/style/utils';
 
 interface Button {
   title: string;
@@ -22,8 +22,6 @@ export default function HomeScreen() {
   ];
 
   return (
-    <View className="flex-1 flex-row flex-wrap bg-blue-50 p-10">
-      {ButtonPrimary(buttons)}
-    </View>
+    <View className={styles.viewScreenHome}>{ButtonHomeIcon(buttons)}</View>
   );
 }

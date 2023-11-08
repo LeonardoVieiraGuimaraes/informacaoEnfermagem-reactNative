@@ -1,7 +1,8 @@
 import React from 'react';
 import { View, Text, TouchableOpacity } from 'react-native';
 import Ionicons from '@expo/vector-icons/Ionicons';
-import ButtonSecond from '../../components/ButtonSecond';
+import ButtonSecond from '../../components/ButtonArrowforward';
+import styles from '../../../assets/style/utils';
 
 interface Button {
   title: string;
@@ -18,9 +19,5 @@ export default function FaleDSPScreen() {
     // { title: "Fale com a DSP", route: "Relatórios", icon: "call" },
   ];
 
-  return (
-    <View className="flex-1 flex-row flex-wrap bg-blue-50">
-      {ButtonSecond(buttons)}
-    </View>
-  );
+  return <View className={styles.viewScreen}>{ButtonSecond(buttons)}</View>;
 }

@@ -14,17 +14,13 @@ export default function buttonDropDown(buttons: any[]) {
             {button.title}
           </Text>
           <Ionicons
-            name={button.isOpen ? button.icon_up : button.icon_down}
+            name={button.isOpen ? 'arrow-down' : 'arrow-up'}
             size={24}
             color="green"
           />
         </View>
       </TouchableOpacity>
-      {button.isOpen && (
-        <Text className="text-black font-semibold text-justify m-2">
-          {button.informacao}
-        </Text>
-      )}
+      {button.isOpen && <View>{button.informacao}</View>}
     </View>
   ));
 }

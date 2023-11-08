@@ -1,6 +1,5 @@
 import React from 'react';
-import { View, Text, TouchableOpacity, ScrollView } from 'react-native';
-import Ionicons from '@expo/vector-icons/Ionicons';
+import { View, ScrollView } from 'react-native';
 import { useState } from 'react';
 
 import ButtonDropDown from '../../../components/ButtonDropDown';
@@ -8,6 +7,7 @@ import BuscaAtivaDiagnostico from './escabiose/BuscaAtivaDiagnostico';
 import Tratamento from './escabiose/Tratamento';
 import Isolamento from './escabiose/Isolamento';
 import MedidasControle from './escabiose/MedidasControle';
+import styles from '../../../../assets/style/utils';
 
 interface Button {
   title: string;
@@ -66,9 +66,7 @@ export default function EscabioseScreen() {
 
   return (
     <ScrollView>
-      <View className="flex-1 flex-row flex-wrap bg-blue-50">
-        {ButtonDropDown(buttons)}
-      </View>
+      <View className={styles.viewScreen}>{ButtonDropDown(buttons)}</View>
     </ScrollView>
   );
 }

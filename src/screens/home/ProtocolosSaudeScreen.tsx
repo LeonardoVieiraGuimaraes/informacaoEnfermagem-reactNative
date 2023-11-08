@@ -2,29 +2,24 @@ import React from 'react';
 import { View, Text, TouchableOpacity } from 'react-native';
 import { NavigationProp } from '../../models/types';
 import { useNavigation } from '@react-navigation/native';
-import ButtonSecond from '../../components/ButtonSecond';
+import ButtonSecond from '../../components/ButtonArrowforward';
+import styles from '../../../assets/style/utils';
 
 interface Button {
   title: string;
   route: any;
-  icon: any;
 }
 
 export default function ProtocolosSaudeScreen() {
   const navigation = useNavigation<NavigationProp>();
   const buttons: Button[] = [
-    { title: 'Tuberculose', route: 'Tuberculose', icon: 'arrow-forward' },
-    { title: 'IST-HIV-Aids', route: 'ISTHIVAids', icon: 'arrow-forward' },
+    { title: 'Tuberculose', route: 'Tuberculose' },
+    { title: 'IST-HIV-Aids', route: 'ISTHIVAids' },
     {
       title: 'Escabiose',
       route: 'Escabiose',
-      icon: 'arrow-forward',
     },
   ];
 
-  return (
-    <View className="flex-1 flex-row flex-wrap bg-blue-50">
-      {ButtonSecond(buttons)}
-    </View>
-  );
+  return <View className={styles.viewScreen}>{ButtonSecond(buttons)}</View>;
 }

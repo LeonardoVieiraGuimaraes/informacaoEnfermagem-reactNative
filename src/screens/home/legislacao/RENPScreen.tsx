@@ -1,5 +1,6 @@
 import React from 'react';
 import { WebView } from 'react-native-webview';
+import { Text } from 'react-native';
 
 export default function RENPcreen() {
   return (
