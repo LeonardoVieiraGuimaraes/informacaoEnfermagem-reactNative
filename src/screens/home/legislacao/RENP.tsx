@@ -1,6 +1,7 @@
 import React from 'react';
 import { Text, View } from 'react-native';
 import ButtonArrowforward from '../../../components/ButtonArrowforward';
+import styles from '../../../../assets/style/utils';
 
 interface Button {
   title: string;
@@ -13,18 +14,9 @@ export default function RENP() {
       title: 'RENP',
       route: 'RENP',
     },
-    // { title: 'POP Enfermagem', route: 'POPEnfermagem', icon: 'arrow-forward' },
-    // {
-    //   title: 'Manual de Transporte',
-    //   route: 'ManualTransporte',
-    // },
-    // {
-    //   title: 'Guia de Atenção Primária',
-    //   route: 'GuiaAtencaoPrimaria',
-    // },
   ];
   return (
-    <View>
+    <View className={styles.viewScreen}>
       <Text className="text-black text-lg font-semibold text-justify">
         "A importância do Regimento Interno do Serviço de Enfermagem como
         instrumento de gestão é inegável, uma vez que não apenas orienta o

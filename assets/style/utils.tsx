@@ -17,7 +17,7 @@ const styles = {
   textInput:
     'tracking-widest bg-gray-100 rounded-lg w-[80%] text-base py-2 px-1 mx-5 mb-5',
 
-  viewScreen: 'flex-1 flex-row flex-wrap bg-blue-50',
+  viewScreen: 'flex-1 flex-row flex-wrap',
   viewScreenHome: 'flex-1 flex-row flex-wrap bg-blue-50 p-10',
 };
 
