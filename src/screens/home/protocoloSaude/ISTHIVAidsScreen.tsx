@@ -9,7 +9,7 @@ import Tratamento from './tuberculose/Tratamento';
 import Prevencao from './isthivaids/Prevencao';
 import OrientacaoTranferencia from './isthivaids/OrientacaoTranferencia';
 import ButtonDropDown from '../../../components/ButtonDropDown';
-import styles from '../../../../assets/style/utils';
+import styles from '../../../../assets/Styles/Styles';
 
 interface Button {
   title: string;
@@ -54,7 +54,7 @@ export default function NormasRotinasScreen() {
       informacao: <Tratamento />,
     },
     {
-      title: 'Isolamento',
+      title: 'Prevenção',
       isOpen: isOpenPrevencao,
       setIsOpen: setIsOpenPrevencao,
       icon_down: 'arrow-down',
@@ -73,8 +73,8 @@ export default function NormasRotinasScreen() {
   ];
 
   return (
-    <ScrollView>
-      <View className={styles.viewScreen}>{ButtonDropDown(buttons)}</View>
-    </ScrollView>
+    <View className={styles.screen}>
+      <ScrollView>{ButtonDropDown(buttons)}</ScrollView>
+    </View>
   );
 }

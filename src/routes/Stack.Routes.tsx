@@ -11,13 +11,22 @@ import NivelAutonomiaScreen from '../screens/home/NivelAutonomiaScreen';
 import FaleDSPScreen from '../screens/home/FaleDSPScreen';
 import RENPScreen from '../screens/home/legislacao/RENPScreen';
 import LEPScreen from '../screens/home/legislacao/LEPScreen';
-import LeiExercicoProfissionalScreen from '../screens/home/legislacao/LeiExercicoProfissionalScreen';
+import LeiExercicoProfissionalScreen from '../screens/home/legislacao/LeiExercicioProfissionalScreen';
 import PNAISPScreen from '../screens/home/legislacao/PNAISPScreen';
 import ResolucaoCargaHorariaScreen from '../screens/home/legislacao/ResolucaoCargaHorariaScreen';
 import RegimentoEnfermagemSceen from '../screens/home/normasRotinas/RegimentoEnfermagemScreen';
 import TuberculoseScreen from '../screens/home/protocoloSaude/TuberculoseScreen';
 import ISTHIVAidsScreen from '../screens/home/protocoloSaude/ISTHIVAidsScreen';
 import EscabioseScreen from '../screens/home/protocoloSaude/EscabioseScreen';
+import POPEnfermagemScreen from '../screens/home/normasRotinas/POPEnfermagemScreen';
+import ManualTransporteScreen from '../screens/home/normasRotinas/ManualTransporteScreen';
+import GuiaAtencaoPrimariaScreen from '../screens/home/normasRotinas/GuiaAtencaoPrimariaScreen';
+import EscalaAtividaEnfermagemScreen from '../screens/home/nivelAutonomia/EscalaAtividaEnfermagemScreen';
+
+import VoceConsegueScreen from '../screens/home/nivelAutonomia/VoceConsegueScreen';
+import ParabensScreen from '../screens/home/nivelAutonomia/ParabensScreen';
+import QuaseLaScreen from '../screens/home/nivelAutonomia/QuaseLaScreen';
+import LeiExercicioProfissionalScreen from '../screens/home/legislacao/LeiExercicioProfissionalScreen';
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
 
@@ -66,7 +75,7 @@ export default function StackRoutes() {
       />
       <Stack.Screen
         name="LeiExercicioProfissional"
-        component={LeiExercicoProfissionalScreen}
+        component={LeiExercicioProfissionalScreen}
         options={{ title: 'Lei do Exercício Profissional' }}
       />
       <Stack.Screen
@@ -85,6 +94,22 @@ export default function StackRoutes() {
         options={{ title: 'Regimento de Enfermagem' }}
       />
       <Stack.Screen
+        name="POPEnfermagem"
+        component={POPEnfermagemScreen}
+        options={{ title: 'POP Enfermagem' }}
+      />
+      <Stack.Screen
+        name="ManualTransporte"
+        component={ManualTransporteScreen}
+        options={{ title: 'Manual de Transporte' }}
+      />
+      <Stack.Screen
+        name="GuiaAtencaoPrimaria"
+        component={GuiaAtencaoPrimariaScreen}
+        options={{ title: 'Guia Atneção Primária' }}
+      />
+
+      <Stack.Screen
         name="Tuberculose"
         component={TuberculoseScreen}
         options={{ title: 'Tuberculose' }}
@@ -98,6 +123,26 @@ export default function StackRoutes() {
         name="Escabiose"
         component={EscabioseScreen}
         options={{ title: 'Escabiose' }}
+      />
+      <Stack.Screen
+        name="EscalaAtividaEnfermagemScreen"
+        component={EscalaAtividaEnfermagemScreen}
+        options={{ title: 'Escala de Ativdade de Enfermagem' }}
+      />
+      <Stack.Screen
+        name="parabens"
+        component={ParabensScreen}
+        options={{ title: 'Parabéns!' }}
+      />
+      <Stack.Screen
+        name="quaseLa"
+        component={QuaseLaScreen}
+        options={{ title: 'Quase lá!' }}
+      />
+      <Stack.Screen
+        name="voceConsegue"
+        component={VoceConsegueScreen}
+        options={{ title: 'Você Consegue!' }}
       />
     </Stack.Navigator>
   );

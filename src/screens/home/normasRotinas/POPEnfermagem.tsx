@@ -1,23 +1,22 @@
 import React from 'react';
 import { Text, View } from 'react-native';
 import ButtonArrowforward from '../../../components/ButtonArrowforward';
-import styles from '../../../../assets/Styles/Styles';
 
 interface Button {
   title: string;
   route: String;
 }
 
-export default function ResolucaoCargaHoraria() {
+export default function POPEnfermagem() {
   const buttons: Button[] = [
     {
-      title: 'Resolucao de Carga Horaria',
-      route: 'ResolucaoCargaHoraria',
+      title: 'POP Enfermagem',
+      route: 'POPEnfermagem',
     },
   ];
   return (
-    <View className={styles.screen}>
-      <Text className={styles.text}></Text>
+    <View>
+      <Text></Text>
       {ButtonArrowforward(buttons)}
     </View>
   );

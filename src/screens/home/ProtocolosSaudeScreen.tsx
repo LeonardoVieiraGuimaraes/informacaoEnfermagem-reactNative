@@ -1,9 +1,9 @@
 import React from 'react';
-import { View, Text, TouchableOpacity } from 'react-native';
+import { View, Text, TouchableOpacity, ScrollView } from 'react-native';
 import { NavigationProp } from '../../models/types';
 import { useNavigation } from '@react-navigation/native';
 import ButtonSecond from '../../components/ButtonArrowforward';
-import styles from '../../../assets/style/utils';
+import styles from '../../../assets/Styles/Styles';
 
 interface Button {
   title: string;
@@ -21,5 +21,9 @@ export default function ProtocolosSaudeScreen() {
     },
   ];
 
-  return <View>{ButtonSecond(buttons)}</View>;
+  return (
+    <View className={styles.screen}>
+      <ScrollView>{ButtonSecond(buttons)}</ScrollView>
+    </View>
+  );
 }

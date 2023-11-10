@@ -1,7 +1,7 @@
 import React from 'react';
 import { Text, View } from 'react-native';
 import ButtonArrowforward from '../../../components/ButtonArrowforward';
-import styles from '../../../../assets/style/utils';
+import styles from '../../../../assets/Styles/Styles';
 
 interface Button {
   title: string;
@@ -12,12 +12,12 @@ export default function LeiExercicioProfissional() {
   const buttons: Button[] = [
     {
       title: 'Lei do Exercico Profissional',
-      route: 'LeiExercicoProfissional',
+      route: 'LeiExercicioProfissional',
     },
   ];
   return (
-    <View>
-      <Text></Text>
+    <View className={styles.screen}>
+      <Text className={styles.text}></Text>
       {ButtonArrowforward(buttons)}
     </View>
   );

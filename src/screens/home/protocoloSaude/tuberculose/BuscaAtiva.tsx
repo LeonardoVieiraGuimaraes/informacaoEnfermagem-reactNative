@@ -1,8 +1,9 @@
 import { Text } from 'react-native';
+import styles from '../../../../../assets/Styles/Styles';
 
 export default function BuscaAtiva() {
   return (
-    <Text className="text-black text-lg font-semibold text-left">
+    <Text className={styles.text}>
       Busca ativa de casos suspeitos (sintomático respiratório) pessoa que
       apresenta tosse, com qualquer tempo de duração, podendo estar associada ou
       não a outros sintomas.

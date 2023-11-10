@@ -1,6 +1,8 @@
 import React from 'react';
 import { View } from 'react-native';
 import ButtonHomeIcon from '../components/ButtonHomeIcon';
+import Styles from '../../assets/Styles/Styles';
+import styles from '../../assets/Styles/Styles';
 
 interface Button {
   title: string;
@@ -17,5 +19,5 @@ export default function HomeScreen() {
     { title: 'Fale com a DSP', route: 'FaleDSP', icon: 'call' },
   ];
 
-  return <View>{ButtonHomeIcon(buttons)}</View>;
+  return <View className={styles.screenHome}>{ButtonHomeIcon(buttons)}</View>;
 }

@@ -7,14 +7,12 @@ import BuscaAtivaDiagnostico from './escabiose/BuscaAtivaDiagnostico';
 import Tratamento from './escabiose/Tratamento';
 import Isolamento from './escabiose/Isolamento';
 import MedidasControle from './escabiose/MedidasControle';
-import styles from '../../../../assets/style/utils';
+import styles from '../../../../assets/Styles/Styles';
 
 interface Button {
   title: string;
   setIsOpen: any;
   isOpen: boolean;
-  icon_up: any;
-  icon_down: any;
   informacao: any;
 }
 
@@ -33,24 +31,19 @@ export default function EscabioseScreen() {
       title: 'Busca Ativa e Diagnóstico',
       isOpen: isOpenBuscaAtivaDiagnostico,
       setIsOpen: setIsOpenBuscaAtivaDiagnostico,
-      icon_down: 'arrow-down',
-      icon_up: 'arrow-up',
+
       informacao: <BuscaAtivaDiagnostico />,
     },
     {
       title: 'Tratamento',
       isOpen: isOpenTratamento,
       setIsOpen: setIsOpenTratamento,
-      icon_down: 'arrow-down',
-      icon_up: 'arrow-up',
       informacao: <Tratamento />,
     },
     {
       title: 'Isolamento',
       isOpen: isOpenIsolamento,
       setIsOpen: setIsOpenIsolamento,
-      icon_down: 'arrow-down',
-      icon_up: 'arrow-up',
       informacao: <Isolamento />,
     },
 
@@ -58,15 +51,13 @@ export default function EscabioseScreen() {
       title: 'Meidas de Controle',
       isOpen: isOpenMedidasControle,
       setIsOpen: setIsOpenMedidasControle,
-      icon_down: 'arrow-down',
-      icon_up: 'arrow-up',
       informacao: <MedidasControle />,
     },
   ];
 
   return (
-    <ScrollView>
-      <View className={styles.viewScreen}>{ButtonDropDown(buttons)}</View>
-    </ScrollView>
+    <View className={styles.screen}>
+      <ScrollView>{ButtonDropDown(buttons)}</ScrollView>
+    </View>
   );
 }

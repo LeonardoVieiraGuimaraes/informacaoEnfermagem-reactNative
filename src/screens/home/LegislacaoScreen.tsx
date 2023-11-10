@@ -7,11 +7,7 @@ import LEP from './legislacao/LEP';
 import LeiExercicioProfissional from './legislacao/LeiExercicioProfissional';
 import PNAISP from './legislacao/PNAISP';
 import ResolucaoCargaHoraria from './legislacao/ResolucaoCargaHoraria';
-// import Resumo from './regimentoEnfermagem/Resumo';
-// import EscalaEnfermagem from './regimentoEnfermagem/EscalaEnfermagem';
-// import FichaFuncional from './regimentoEnfermagem/FichaFuncional';
-// import RegimentoEnfermagem from './regimentoEnfermagem/RegimentoEnfermagem';
-// import buttonDropDown from '../../../components/ButtonDropDown';
+import styles from '../../../assets/Styles/Styles';
 
 interface Button {
   title: string;
@@ -28,10 +24,6 @@ export default function LegislacaoScreen() {
   const [isOpenPNAISP, setIsOpenPNAISP] = useState(false);
   const [isOpenResolucaoCargaHoraria, setIsOpenResolucaoCargaHoraria] =
     useState(false);
-  // const [isOpenEscalaEnfermagem, setIsOpenEscalaEnfermagem] = useState(false);
-  // const [isOpenFichaFuncional, setIsOpenFichaFuncional] = useState(false);
-  // const [isOpenRegimentoEnfermagem, setIsOpenRegimentoEnfermagem] =
-  //   useState(false);
 
   const buttons: Button[] = [
     {
@@ -67,10 +59,8 @@ export default function LegislacaoScreen() {
   ];
 
   return (
-    <ScrollView>
-      <View>{buttonDropDown(buttons)}</View>
-    </ScrollView>
+    <View className={styles.screen}>
+      <ScrollView>{buttonDropDown(buttons)}</ScrollView>
+    </View>
   );
 }
-
-// style={{ color: 'black', fontSize: 18, fontWeight: 'bold', textAlign: 'left' }}

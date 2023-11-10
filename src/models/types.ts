@@ -19,6 +19,13 @@ export type RootStackParamList = {
   Tuberculose: undefined;
   ISTHIVAids: undefined;
   Escabiose: undefined;
+  POPEnfermagem: undefined;
+  ManualTransporte: undefined;
+  GuiaAtencaoPrimaria: undefined;
+  EscalaAtividaEnfermagemScreen: undefined;
+  parabens: undefined;
+  quaseLa: undefined;
+  voceConsegue: undefined;
   // adicione outras rotas aqui
 };
 

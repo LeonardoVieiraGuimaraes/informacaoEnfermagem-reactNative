@@ -8,25 +8,20 @@ export default function buttonDropDown(buttons: any[]) {
   const navigation = useNavigation<NavigationProp>();
 
   return (
-    <View className="flex flex-row flex-wrap items-center justify-center m-4">
+    <View className="flex pb-4 gap-4 items-center justify-center">
       {buttons.map((button, index) => (
         <TouchableOpacity
           key={index}
-          className="bg-white rounded-lg shadow-lg w-full p-3 m-3"
+          className="bg-white w-full p-5"
           onPress={() => {
             navigation.navigate(button.route);
           }}
         >
           <View className="flex flex-row items-center justify-between">
-            <Text className="text-black text-lg font-semibold text-left">
+            <Text className="text-black text-lg font-semibold">
               {button.title}
             </Text>
-            <Ionicons
-              name={'arrow-forward'}
-              size={40}
-              color="green"
-              className="mr-3 basis-1/2"
-            />
+            <Ionicons name={'arrow-forward'} size={30} color="green" />
           </View>
         </TouchableOpacity>
       ))}

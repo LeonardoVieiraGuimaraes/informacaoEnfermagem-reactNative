@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, TouchableOpacity } from 'react-native';
+import { View, Text, TouchableOpacity, ScrollView } from 'react-native';
 import Ionicons from '@expo/vector-icons/Ionicons';
 import { useState } from 'react';
 
@@ -9,7 +9,7 @@ import Isolamento from './tuberculose/Isolamento';
 import Tratamento from './tuberculose/Tratamento';
 import OrientacaoTranferencia from './tuberculose/OrientacaoTranferencia';
 import ButtonDropDown from '../../../components/ButtonDropDown';
-import styles from '../../../../assets/style/utils';
+import styles from '../../../../assets/Styles/Styles';
 
 interface Button {
   title: string;
@@ -71,5 +71,9 @@ export default function NormasRotinasScreen() {
     },
   ];
 
-  return <View className={styles.viewScreen}>{ButtonDropDown(buttons)}</View>;
+  return (
+    <View className={styles.screen}>
+      <ScrollView>{ButtonDropDown(buttons)}</ScrollView>
+    </View>
+  );
 }

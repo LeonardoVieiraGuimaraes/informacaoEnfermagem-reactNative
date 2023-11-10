@@ -1,8 +1,9 @@
 import { Text } from 'react-native';
+import styles from '../../../../../assets/Styles/Styles';
 
 export default function Diagnostico() {
   return (
-    <Text className="text-black text-lg font-semibold text-left">
+    <Text className={styles.text}>
       Diagnóstico (Teste Rápido Molecular- TRM-TB, baciloscopia e/ou cultura do
       escarro) exames preferenciais.
     </Text>

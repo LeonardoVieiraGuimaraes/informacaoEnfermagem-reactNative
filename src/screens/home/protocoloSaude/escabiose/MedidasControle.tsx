@@ -1,8 +1,9 @@
 import { Text } from 'react-native';
+import styles from '../../../../../assets/Styles/Styles';
 
 export default function buscaAtivaDiagnostico() {
   return (
-    <Text className="text-black text-lg font-semibold text-left">
+    <Text className={styles.text}>
       Deve ser intensificada as medidas de higiene pessoal e limpeza do
       ambiente, troca de roupa de cama e colchão de todas as celas em que se tem
       caso diagnosticado. A lavagem das roupas de cama, toalhas e vestimentas

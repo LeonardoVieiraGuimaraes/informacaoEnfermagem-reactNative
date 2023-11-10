@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, TouchableOpacity } from 'react-native';
+import { View, Text, TouchableOpacity, ScrollView } from 'react-native';
 import Ionicons from '@expo/vector-icons/Ionicons';
 import { useState } from 'react';
 import Resumo from './regimentoEnfermagem/Resumo';
@@ -7,6 +7,7 @@ import EscalaEnfermagem from './regimentoEnfermagem/EscalaEnfermagem';
 import FichaFuncional from './regimentoEnfermagem/FichaFuncional';
 import RegimentoEnfermagem from './regimentoEnfermagem/RegimentoEnfermagem';
 import buttonDropDown from '../../../components/ButtonDropDown';
+import styles from '../../../../assets/Styles/Styles';
 
 interface Button {
   title: string;
@@ -49,7 +50,11 @@ export default function NormasRotinas() {
     },
   ];
 
-  return <View>{buttonDropDown(buttons)}</View>;
+  return (
+    <View className={styles.screen}>
+      <ScrollView>{buttonDropDown(buttons)}</ScrollView>
+    </View>
+  );
 }
 
 // style={{ color: 'black', fontSize: 18, fontWeight: 'bold', textAlign: 'left' }}

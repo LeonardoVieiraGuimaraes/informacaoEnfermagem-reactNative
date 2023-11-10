@@ -8,7 +8,7 @@ export default function buttonDropDown(buttons: any[]) {
   const navigation = useNavigation<NavigationProp>();
 
   return (
-    <View className="flex flex-row flex-wrap gap-6 justify-center">
+    <View className="flex-row flex-wrap gap-6 justify-center">
       {buttons.map((button, index) => (
         <TouchableOpacity
           key={index}
