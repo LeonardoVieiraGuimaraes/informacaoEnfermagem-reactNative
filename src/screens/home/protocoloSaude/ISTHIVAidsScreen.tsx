@@ -9,7 +9,7 @@ import Tratamento from './tuberculose/Tratamento';
 import Prevencao from './isthivaids/Prevencao';
 import OrientacaoTranferencia from './isthivaids/OrientacaoTranferencia';
 import ButtonDropDown from '../../../components/ButtonDropDown';
-import styles from '../../../../assets/Styles/Styles';
+import styles from '../../Styles/Styles';
 
 interface Button {
   title: string;

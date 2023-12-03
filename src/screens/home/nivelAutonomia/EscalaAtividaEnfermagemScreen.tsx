@@ -3,7 +3,7 @@ import { View, Text, Button, ScrollView, StyleSheet } from 'react-native';
 import { Picker } from '@react-native-picker/picker';
 import { useNavigation } from '@react-navigation/native';
 import { NavigationProp } from '../../../models/types';
-import styles from '../../../../assets/Styles/Styles';
+import styles from '../../Styles/Styles';
 
 const questions = [
   'Planejo uma carreira para mim próprio(a) e, regularmente, faço a sua revisão no sentido de atingir os objetivos traçados.',
@@ -93,6 +93,7 @@ export default function QuestionarioScreen() {
       navigation.navigate('quaseLa');
       // setResultText('Resultado para média menor ou igual a 3');
     } else {
+      navigation.navigate('parabens');
       setResultText('Resultado para média maior que 3');
     }
   };
@@ -132,7 +133,7 @@ export default function QuestionarioScreen() {
 
 const p = StyleSheet.create({
   picker: {
-    fontSize: 20,
+    fontSize: 30,
   },
   // ...
 });

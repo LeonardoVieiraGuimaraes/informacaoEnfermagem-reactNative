@@ -7,7 +7,7 @@ import EscalaEnfermagem from './regimentoEnfermagem/EscalaEnfermagem';
 import FichaFuncional from './regimentoEnfermagem/FichaFuncional';
 import RegimentoEnfermagem from './regimentoEnfermagem/RegimentoEnfermagem';
 import buttonDropDown from '../../../components/ButtonDropDown';
-import styles from '../../../../assets/Styles/Styles';
+import styles from '../../Styles/Styles';
 
 interface Button {
   title: string;

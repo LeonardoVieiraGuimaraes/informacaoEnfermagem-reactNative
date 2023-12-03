@@ -3,7 +3,7 @@ import { View, Text, TouchableOpacity, ScrollView } from 'react-native';
 import { NavigationProp } from '../../models/types';
 import { useNavigation } from '@react-navigation/native';
 import ButtonSecond from '../../components/ButtonArrowforward';
-import styles from '../../../assets/Styles/Styles';
+import styles from '../Styles/Styles';
 
 interface Button {
   title: string;

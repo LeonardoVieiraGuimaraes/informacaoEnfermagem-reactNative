@@ -1,15 +1,15 @@
 import React from 'react';
 import { View, Text } from 'react-native';
 import { Circle } from '../../../components/Circle';
-import styles from '../../../../assets/Styles/Styles';
+import styles from '../../Styles/Styles';
 
 export default function QuaseLaScreen() {
   const circles = [
     {
       color: 'bg-red-500',
-      text: 'Nível Baixo de Autonomia',
+      text: '',
     },
-    { color: 'bg-yellow-500', text: '' },
+    { color: 'bg-yellow-500', text: 'Nível médio de Autonomia' },
     { color: 'bg-green-500', text: '' },
   ];
   return (

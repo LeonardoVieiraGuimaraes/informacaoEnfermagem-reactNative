@@ -1,5 +1,6 @@
 import React from 'react';
 import { View, Text } from 'react-native';
+import styles from '../screens/Styles/Styles';
 
 interface ColoredCircleProps {
   color: string;
@@ -12,7 +13,7 @@ export function Circle({ color, text }: ColoredCircleProps) {
       <View
         className={`w-32 h-32 ${color} rounded-full items-center justify-center`}
       >
-        <Text className="text-center">{text}</Text>
+        <Text className="text-center text-lg">{text}</Text>
       </View>
     </View>
   );

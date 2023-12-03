@@ -7,7 +7,7 @@ import LEP from './legislacao/LEP';
 import LeiExercicioProfissional from './legislacao/LeiExercicioProfissional';
 import PNAISP from './legislacao/PNAISP';
 import ResolucaoCargaHoraria from './legislacao/ResolucaoCargaHoraria';
-import styles from '../../../assets/Styles/Styles';
+import styles from '../Styles/Styles';
 
 interface Button {
   title: string;
