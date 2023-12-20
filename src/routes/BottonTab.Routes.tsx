@@ -3,7 +3,6 @@ import { createMaterialBottomTabNavigator } from '@react-navigation/material-bot
 import { AntDesign } from '@expo/vector-icons';
 import AboutScreen from '../screens/AboutScreen';
 import StackRoutes from './Stack.Routes';
-import HomeScreen from '../screens/HomeScreen';
 
 interface Screen {
   name: string;

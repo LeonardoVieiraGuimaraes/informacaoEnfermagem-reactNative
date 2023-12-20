@@ -5,7 +5,7 @@ export default function ResolucaoCargaHoraria() {
   return (
     <WebView
       source={{
-        uri: 'https://drive.google.com/file/d/1AxRH6oHmNile7H_6ScE0c24nl7KiWb97/view?usp=sharing',
+        uri: 'https://drive.google.com/file/d/1aOnULEdTS96M94tDMnpelfZCu-beM0w6/view?usp=sharing',
       }}
     />
   );

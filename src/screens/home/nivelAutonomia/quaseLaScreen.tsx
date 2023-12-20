@@ -22,10 +22,9 @@ export default function QuaseLaScreen() {
         </View>
         <View className="flex-1">
           <Text className={styles.text}>
-            Você pode alcançar melhores resultados, gerencinado seu trabalho e
-            utilizando seu conhecimento técnico. Crie metas, mantenha o diálogo
-            equlibrado com a equipe de saúde e segurança e continue no êxito de
-            seu trabalho
+            {
+              'Você pode alcançar melhores resultados, gerencinado seu trabalho e utilizando seu conhecimento técnico. Crie metas, mantenha o diálogo equlibrado com a equipe de saúde e segurança e continue no êxito de seu trabalho'
+            }
           </Text>
         </View>
       </View>

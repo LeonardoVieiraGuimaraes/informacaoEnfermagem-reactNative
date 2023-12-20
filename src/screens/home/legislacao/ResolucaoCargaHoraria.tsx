@@ -17,7 +17,7 @@ export default function ResolucaoCargaHoraria() {
   ];
   return (
     <View className={styles.screen}>
-      <Text className={styles.text}></Text>
+      <Text></Text>
       {ButtonArrowforward(buttons)}
     </View>
   );

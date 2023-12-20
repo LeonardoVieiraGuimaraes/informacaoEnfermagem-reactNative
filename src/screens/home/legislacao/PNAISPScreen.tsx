@@ -5,7 +5,7 @@ export default function PNAISPScreen() {
   return (
     <WebView
       source={{
-        uri: 'https://drive.google.com/file/d/1oRB9MayqD_P1ea07dkERhI5VR_5nwLET/view?usp=drive_link',
+        uri: 'https://drive.google.com/file/d/1gw1rXuJk0B1zTb6LC3SDI5tFGKppPChY/view?usp=sharing',
       }}
     />
   );

@@ -14,10 +14,14 @@ export default function PNAISP() {
       title: 'PNAISP',
       route: 'PNAISP',
     },
+    {
+      title: 'Cartilha PNAISP',
+      route: 'PNAISPCartilha',
+    },
   ];
   return (
-    <View className={styles.screen}>
-      <Text className={styles.text}></Text>
+    <View>
+      <Text></Text>
       {ButtonArrowforward(buttons)}
     </View>
   );

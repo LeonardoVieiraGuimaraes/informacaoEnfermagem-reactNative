@@ -22,13 +22,9 @@ export default function VoceConsegueScreen() {
         </View>
         <View className="flex-1">
           <Text className={styles.text}>
-            'Você precisa desenvolver melhor suas habilidades mostrando sua
-            competência e capacidade técnica. Neste sentido ficará vidente o
-            quanto você é responsáivel. Aumentar o diálogo com os profissionais
-            de saúde e segurança contribuirá um ambiente organizacional mais
-            tranquilo e poderá melhorar os resultados esperados com o seu
-            trabalho. Tudo isto favorecerá sentimento de realização, melhor
-            autonomia e organização de trabalho.
+            {
+              'Você precisa desenvolver melhor suas habilidades mostrando sua competência e capacidade técnica. Neste sentido ficará vidente o quanto você é responsáivel. Aumentar o diálogo com os profissionais de saúde e segurança contribuirá um ambiente organizacional mais tranquilo e poderá melhorar os resultados esperados com o seu trabalho. Tudo isto favorecerá sentimento de realização, melhor autonomia e organização de trabalho.'
+            }
           </Text>
         </View>
       </View>

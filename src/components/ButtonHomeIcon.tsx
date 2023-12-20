@@ -11,8 +11,8 @@ export default function buttonDropDown(buttons: any[]) {
     <View className="flex-row flex-wrap gap-6 justify-center">
       {buttons.map((button, index) => (
         <TouchableOpacity
-          key={index}
           className="bg-white rounded-lg shadow-lg items-center justify-center w-36 h-36"
+          key={index}
           onPress={() => {
             navigation.navigate(button.route);
           }}

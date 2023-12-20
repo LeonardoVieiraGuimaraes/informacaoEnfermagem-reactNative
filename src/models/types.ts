@@ -5,6 +5,7 @@ export type RootStackParamList = {
   HomeStack: undefined;
   Inicio: undefined;
   Legislacao: undefined;
+  Lei: undefined;
   NormasRotinas: undefined;
   NivelAutonomiar: undefined;
   ProtocolosSaude: undefined;
@@ -26,6 +27,12 @@ export type RootStackParamList = {
   parabens: undefined;
   quaseLa: undefined;
   voceConsegue: undefined;
+  Renp: undefined;
+  PNAISPCartilha: undefined;
+  EscalaEnfermagem: undefined;
+  FichaFuncional: undefined;
+  RegimentoEnfermagemDoc: undefined;
+  Treinamento: undefined;
   // adicione outras rotas aqui
 };
 

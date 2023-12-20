@@ -11,13 +11,13 @@ interface Button {
 export default function RegimentoEnfermagem() {
   const buttons: Button[] = [
     {
-      title: 'Ficha Funcional',
-      route: 'FichaFuncional',
+      title: 'Regimento de Enfermagem',
+      route: 'RegimentoEnfermagemDoc',
     },
   ];
   return (
     <View>
-      <Text className={styles.text}></Text>
+      <Text></Text>
       {ButtonArrowforward(buttons)}
     </View>
   );

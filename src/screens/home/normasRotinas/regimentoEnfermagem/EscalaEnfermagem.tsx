@@ -17,7 +17,7 @@ export default function PNAISP() {
   ];
   return (
     <View>
-      <Text className={styles.text}></Text>
+      <Text></Text>
       {ButtonArrowforward(buttons)}
     </View>
   );

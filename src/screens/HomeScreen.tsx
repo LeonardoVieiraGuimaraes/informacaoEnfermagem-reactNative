@@ -11,7 +11,8 @@ interface Button {
 
 export default function HomeScreen() {
   const buttons: Button[] = [
-    { title: 'Legilação', route: 'Legislacao', icon: 'book' },
+    { title: 'Legislação', route: 'Legislacao', icon: 'book' },
+
     { title: 'Normas e Rotinas', route: 'NormasRotinas', icon: 'list' },
     { title: 'Protocolo de Saúde', route: 'ProtocolosSaude', icon: 'medkit' },
     { title: 'Nível de Autonomia', route: 'NivelAutonomia', icon: 'bar-chart' },

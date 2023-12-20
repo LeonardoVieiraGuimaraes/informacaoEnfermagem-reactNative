@@ -1,3 +1,33 @@
+// import React from 'react';
+// import { Text, View } from 'react-native';
+// import ButtonArrowforward from '../../../components/ButtonArrowforward';
+// import styles from '../../Styles/Styles';
+
+// interface Button {
+//   title: string;
+//   route: String;
+// }
+
+// export default function PNAISP() {
+//   const buttons: Button[] = [
+//     {
+//       title: 'LEP',
+//       route: 'LEP',
+//     },
+//   ];
+//   return (
+//     <View className={styles.screen}>
+//       <Text>
+//         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore odio,
+//         reiciendis, accusantium inventore impedit aperiam non sint ratione cum
+//         dicta quo! Alias, delectus inventore voluptatum unde nulla maiores esse
+//         pariatur.
+//       </Text>
+//       {ButtonArrowforward(buttons)}
+//     </View>
+//   );
+// }
+
 import React from 'react';
 import { Text, View } from 'react-native';
 import ButtonArrowforward from '../../../components/ButtonArrowforward';
@@ -8,7 +38,7 @@ interface Button {
   route: String;
 }
 
-export default function PNAISP() {
+export default function GuiaAtencaoPrimaria() {
   const buttons: Button[] = [
     {
       title: 'LEP',
@@ -16,8 +46,8 @@ export default function PNAISP() {
     },
   ];
   return (
-    <View className={styles.screen}>
-      <Text className={styles.text}></Text>
+    <View>
+      <Text></Text>
       {ButtonArrowforward(buttons)}
     </View>
   );

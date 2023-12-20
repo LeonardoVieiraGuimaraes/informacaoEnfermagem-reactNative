@@ -17,7 +17,7 @@ export default function FichaFuncional() {
   ];
   return (
     <View>
-      <Text className={styles.text}></Text>
+      <Text></Text>
       {ButtonArrowforward(buttons)}
     </View>
   );

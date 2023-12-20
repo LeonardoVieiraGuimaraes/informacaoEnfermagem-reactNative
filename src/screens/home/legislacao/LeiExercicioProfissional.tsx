@@ -16,8 +16,8 @@ export default function LeiExercicioProfissional() {
     },
   ];
   return (
-    <View className={styles.screen}>
-      <Text className={styles.text}></Text>
+    <View>
+      <Text></Text>
       {ButtonArrowforward(buttons)}
     </View>
   );

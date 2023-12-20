@@ -22,9 +22,9 @@ export default function ParabensScreen() {
         </View>
         <View className="flex-1">
           <Text className={styles.text}>
-            Você é capaz de executar de executar a gestão do seu trabalho com
-            autnomia gerando mais resultados e contríbundio para uma assistência
-            qualificada.
+            {
+              'Você é capaz de executar de executar a gestão do seu trabalho com autnomia gerando mais resultados e contríbundio para uma assistência qualificada.'
+            }
           </Text>
         </View>
       </View>

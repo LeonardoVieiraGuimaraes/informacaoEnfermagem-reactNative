@@ -5,7 +5,7 @@ import { useState } from 'react';
 
 import Treinamento from './isthivaids/Treinamento';
 import Diagnostico from './isthivaids/Diagnostico';
-import Tratamento from './tuberculose/Tratamento';
+import Tratamento from './isthivaids/Tratamento';
 import Prevencao from './isthivaids/Prevencao';
 import OrientacaoTranferencia from './isthivaids/OrientacaoTranferencia';
 import ButtonDropDown from '../../../components/ButtonDropDown';

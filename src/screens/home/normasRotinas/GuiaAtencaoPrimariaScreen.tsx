@@ -5,7 +5,7 @@ export default function POPEnfermagem() {
   return (
     <WebView
       source={{
-        uri: 'https://www2.camara.leg.br/legin/fed/lei/1980-1987/lei-7498-25-junho-1986-368005-normaatualizada-pl.pdf',
+        uri: 'https://www.corenmg.gov.br/wp-content/uploads/2019/12/Guia-de-Orientacoes-para-a-Atuacao-da-Equipe-de-Enfermagem-na-Atencao-Primaria-a-Saude.pdf',
       }}
     />
   );

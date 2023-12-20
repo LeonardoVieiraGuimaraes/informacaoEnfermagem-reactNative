@@ -1,20 +1,26 @@
-import { Text, TouchableOpacity, Linking } from 'react-native';
+import React from 'react';
+import { Text, View } from 'react-native';
+import ButtonArrowforward from '../../../../components/ButtonArrowforward';
+import styles from '../../../Styles/Styles';
+
+interface Button {
+  title: string;
+  route: String;
+}
 
 export default function Treinamento() {
-  const openURL = () => {
-    Linking.openURL('https://www.example.com');
-  };
-
+  const buttons: Button[] = [
+    {
+      title: 'Treinamento',
+      route: 'Treinamento',
+    },
+  ];
   return (
-    <>
-      <Text className="text-black text-lg font-semibold text-left">
-        Participar do treinamento via TELEI-AB sobre testagem rápida Link:
+    <View>
+      <Text className={styles.text}>
+        {'Participar do treinamento via TELELAB sobre testagem rápida \nLink: '}
       </Text>
-      <TouchableOpacity onPress={openURL}>
-        <Text style={{ color: 'blue' }}>
-          https://telelahaids.gov.br/index.php/component/k2/item/769-testesrapidos-acesso-rapido
-        </Text>
-      </TouchableOpacity>
-    </>
+      {ButtonArrowforward(buttons)}
+    </View>
   );
 }

@@ -5,7 +5,7 @@ export default function EscalaEnfermagemScreen() {
   return (
     <WebView
       source={{
-        uri: 'https://drive.google.com/file/d/1OsCUcW6wYuUPAkDcuf6Teo9_xcmvv4zj/view?usp=drive_link',
+        uri: 'https://docs.google.com/document/d/1f-FM5LXD05iCX1EwTvq4NH3xkg7ZGWSV/edit?usp=drive_link&ouid=116778489310709069261&rtpof=true&sd=true',
       }}
     />
   );

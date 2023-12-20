@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Text, TouchableOpacity } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 
-export default function buttonDropDown(buttons: any[]) {
+export default function ButtonDropDown(buttons: any[]) {
   return (
     <View className="flex gap-4 items-center justify-center">
       {buttons.map((button, index) => (
@@ -17,7 +17,7 @@ export default function buttonDropDown(buttons: any[]) {
               </Text>
               <Ionicons
                 name={button.isOpen ? 'arrow-down' : 'arrow-up'}
-                size={30}
+                size={28}
                 color="green"
               />
             </View>

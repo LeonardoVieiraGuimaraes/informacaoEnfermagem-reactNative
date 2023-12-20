@@ -72,29 +72,29 @@ const questions = [
 export default function QuestionarioScreen() {
   const navigation = useNavigation<NavigationProp>();
   const [answers, setAnswers] = useState(Array(questions.length).fill(1));
-  const [average, setAverage] = useState<number | null>(null);
-  const [resultText, setResultText] = useState<string | null>(null);
 
   const onValueChange = (questionIndex: number, answer: number) => {
     const newAnswers = [...answers];
     newAnswers[questionIndex] = answer;
     setAnswers(newAnswers);
   };
+  const weights = [
+    3, 3, 3, 3, 3, 3, 2, 1, 1, 2, 3, 3, 2, 1, 1, 2, 1, 3, 2, 2, 2, 1, 2, 2, 1,
+    1, 2, 3, 1, 1,
+  ];
 
-  const calculateAverage = () => {
-    const sum = answers.reduce((a, b) => a + b, 0);
-    const average = sum / questions.length;
-    setAverage(average);
+  const calculateNAS = () => {
+    let totalScore = 0;
+    for (let i = 0; i < weights.length; i++) {
+      totalScore += weights[i] * answers[i];
+    }
 
-    if (average <= 2) {
+    if (totalScore >= 60 && totalScore <= 120) {
       navigation.navigate('voceConsegue');
-      // setResultText('Resultado para média menor ou igual a 2');
-    } else if (average <= 3) {
+    } else if (totalScore > 120 && totalScore <= 180) {
       navigation.navigate('quaseLa');
-      // setResultText('Resultado para média menor ou igual a 3');
-    } else {
+    } else if (totalScore > 180 && totalScore <= 240) {
       navigation.navigate('parabens');
-      setResultText('Resultado para média maior que 3');
     }
   };
 
@@ -111,21 +111,18 @@ export default function QuestionarioScreen() {
               style={p.picker}
             >
               <Picker.Item
-                label="1 - Muito improvável atuar desta forma"
+                label="Muito improvável atuar desta forma"
                 value={1}
               />
-              <Picker.Item label="2 - Improvável atuar desta forma" value={2} />
-              <Picker.Item label="3 - Provável atuar desta forma" value={3} />
-              <Picker.Item
-                label="4 - Muito provável atuar desta forma"
-                value={4}
-              />
+              <Picker.Item label="Improvável atuar desta forma" value={2} />
+              <Picker.Item label="Provável atuar desta forma" value={3} />
+              <Picker.Item label="Muito provável atuar desta forma" value={4} />
             </Picker>
           </View>
         ))}
-        <Button title="Concluir" onPress={calculateAverage} />
-        {average !== null && <Text>Média: {average}</Text>}
-        {resultText && <Text>{resultText}</Text>}
+        <View className="mt-6">
+          <Button title="Concluir" onPress={calculateNAS} />
+        </View>
       </ScrollView>
     </View>
   );

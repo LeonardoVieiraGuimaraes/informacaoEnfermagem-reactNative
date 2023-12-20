@@ -7,7 +7,7 @@ interface Button {
   route: String;
 }
 
-export default function POPEnfermagemScreen() {
+export default function ManualTransporte() {
   const buttons: Button[] = [
     {
       title: 'Manual de Tanporte',
