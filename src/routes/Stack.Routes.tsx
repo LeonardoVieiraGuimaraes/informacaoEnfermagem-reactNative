@@ -140,7 +140,7 @@ export default function StackRoutes() {
       <Stack.Screen
         name="GuiaAtencaoPrimaria"
         component={GuiaAtencaoPrimariaScreen}
-        options={{ title: 'Guia Atneção Primária' }}
+        options={{ title: 'Guia Atenção Primária' }}
       />
 
       <Stack.Screen

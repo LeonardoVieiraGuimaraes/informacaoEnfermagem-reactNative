@@ -11,7 +11,7 @@ interface Button {
 export default function GuiaAtencaoPrimaria() {
   const buttons: Button[] = [
     {
-      title: 'Guia de Atenção Primária',
+      title: 'Download Guia de Atenção Primária',
       route: 'GuiaAtencaoPrimaria',
     },
   ];
