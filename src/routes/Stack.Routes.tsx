@@ -1,58 +1,183 @@
-import * as React from "react";
+import * as React from 'react';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { RootStackParamList } from "../models/types";
+import { RootStackParamList } from '../models/types';
 
 import HomeScreen from '../screens/HomeScreen';
-import InicioScreen from "../screens/home/InicioScreen";
-import LegislacaoScreen from '../screens/inicio/LegislacaoScreen';
-import NormasRotinasScreen from "../screens/inicio/NormasRotinasScreen";
-import ProtocolosSaudeScreen from "../screens/inicio/ProtocolosSaudeScreen";
-import NivelAutonomiaScreen from "../screens/inicio/NivelAutonomiaScreen";
-import FaleDSPScreen from "../screens/inicio/FaleDSPScreen";
-import RENPScreen from "../screens/inicio/legislacao/RENPScreen";
-import LEPScreen from "../screens/inicio/legislacao/LEPScreen";
-import LeiExercicoProfissionalScreen from "../screens/inicio/legislacao/LeiExercicoProfissionalScreen";
-import PNAISPScreen from "../screens/inicio/legislacao/PNAISPScreen";
-import ResolucaoCargaHorariaScreen from "../screens/inicio/legislacao/ResolucaoCargaHorariaScreen";
-import RegimentoEnfermagemSceen from "../screens/inicio/normasRotinas/RegimentoEnfermagemScreen";
-import TuberculoseScreen from "../screens/inicio/protocoloSaude/TuberculoseScreen";
+import LegislacaoScreen from '../screens/home/LegislacaoScreen';
+import NormasRotinasScreen from '../screens/home/NormasRotinasScreen';
+import ProtocolosSaudeScreen from '../screens/home/ProtocolosSaudeScreen';
+import NivelAutonomiaScreen from '../screens/home/NivelAutonomiaScreen';
+import FaleDSPScreen from '../screens/home/FaleDSPScreen';
 
+import RegimentoEnfermagemSceen from '../screens/home/normasRotinas/RegimentoEnfermagemScreen';
+import TuberculoseScreen from '../screens/home/protocoloSaude/TuberculoseScreen';
+import ISTHIVAidsScreen from '../screens/home/protocoloSaude/ISTHIVAidsScreen';
+import EscabioseScreen from '../screens/home/protocoloSaude/EscabioseScreen';
+import POPEnfermagemScreen from '../screens/home/normasRotinas/POPEnfermagemScreen';
+import ManualTransporteScreen from '../screens/home/normasRotinas/ManualTransporteScreen';
+import GuiaAtencaoPrimariaScreen from '../screens/home/normasRotinas/GuiaAtencaoPrimariaScreen';
+import EscalaAtividaEnfermagemScreen from '../screens/home/nivelAutonomia/EscalaAtividaEnfermagemScreen';
+
+import LeiExercicioProfissionalScreen from '../screens/home/legislacao/LeiExercicioProfissionalScreen';
+import LEPScreen from '../screens/home/legislacao/LEPScreen';
+import RENPScreen from '../screens/home/legislacao/RENPScreen';
+
+import VoceConsegueScreen from '../screens/home/nivelAutonomia/VoceConsegueScreen';
+import ParabensScreen from '../screens/home/nivelAutonomia/ParabensScreen';
+import QuaseLaScreen from '../screens/home/nivelAutonomia/QuaseLaScreen';
+import ResolucaoCargaHorariaScreen from '../screens/home/legislacao/ResolucaoCargaHorariaScreen';
+import PNAISPScreen from '../screens/home/legislacao/PNAISPScreen';
+import PNAISPCartilhaScreen from '../screens/home/legislacao/PNAISPCartilhaScreen';
+import EscalaEnfermagemScreen from '../screens/home/normasRotinas/regimentoEnfermagem/EscalaEnfermagemScreen';
+import FichaFuncionalScreen from '../screens/home/normasRotinas/regimentoEnfermagem/FichaFuncionalScreen';
+import RegimentoEnfermagemScreen from '../screens/home/normasRotinas/regimentoEnfermagem/RegimentoEnfermagemScreen';
+import TreinamentoScreen from '../screens/home/protocoloSaude/isthivaids/TreinamentoScreen';
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
 
 export default function StackRoutes() {
   return (
     <Stack.Navigator>
-      {/* Route para a tela home */}
-      <Stack.Screen name="HomeStack" component={HomeScreen} /> 
+      <Stack.Screen
+        name="HomeStack"
+        component={HomeScreen}
+        options={{ title: 'Home' }}
+      />
 
-      {/* Router tela home */}
-      <Stack.Screen name="Inicio" component={InicioScreen} />
+      <Stack.Screen
+        name="NormasRotinas"
+        component={NormasRotinasScreen}
+        options={{ title: 'Normas e Rotinas' }}
+      />
+      <Stack.Screen
+        name="EscalaEnfermagem"
+        component={EscalaEnfermagemScreen}
+        options={{ title: 'Escala de Enfermagem' }}
+      />
 
-      {/* Router tela Inicio */}
-      <Stack.Screen name="Legislacao" component={LegislacaoScreen} />
-      <Stack.Screen name="NormasRotinas" component={NormasRotinasScreen} />
-      <Stack.Screen name="ProtocolosSaude" component={ProtocolosSaudeScreen} />
-      <Stack.Screen name="NivelAutonomia" component={NivelAutonomiaScreen} />
-      <Stack.Screen name="FaleDSP" component={FaleDSPScreen} />
-      
-      {/* Router tela Legislação */}
-      <Stack.Screen name="RENP" component={RENPScreen} />
-      <Stack.Screen name="LEP" component={LEPScreen} />
-      <Stack.Screen name="LeiExercicioProfissional" component={LeiExercicoProfissionalScreen} />
-      <Stack.Screen name="PNAISP" component={PNAISPScreen} />
-      <Stack.Screen name="ResolucaoCargaHoraria" component={ResolucaoCargaHorariaScreen} />
+      <Stack.Screen
+        name="FichaFuncional"
+        component={FichaFuncionalScreen}
+        options={{ title: 'Ficha Funcional' }}
+      />
+      <Stack.Screen
+        name="RegimentoEnfermagemDoc"
+        component={RegimentoEnfermagemScreen}
+        options={{ title: 'Regimento Enfermagem' }}
+      />
+      <Stack.Screen
+        name="Legislacao"
+        component={LegislacaoScreen}
+        options={{ title: 'Legislação' }}
+      />
 
-      {/* Normas e Rotinas */}
-      <Stack.Screen name="RegimentoEnfermagem" component={RegimentoEnfermagemSceen} />
-      
+      <Stack.Screen
+        name="ProtocolosSaude"
+        component={ProtocolosSaudeScreen}
+        options={{ title: 'Protocolos de Saúde' }}
+      />
+      <Stack.Screen
+        name="Treinamento"
+        component={TreinamentoScreen}
+        options={{ title: 'Protocolos de Saúde' }}
+      />
+      <Stack.Screen
+        name="NivelAutonomia"
+        component={NivelAutonomiaScreen}
+        options={{ title: 'Nível de Autonomia' }}
+      />
+      <Stack.Screen
+        name="FaleDSP"
+        component={FaleDSPScreen}
+        options={{ title: 'Fale com o DSP' }}
+      />
+      <Stack.Screen
+        name="RENP"
+        component={RENPScreen}
+        options={{ title: 'RENP Lei' }}
+      />
 
-      {/* Protocolos de Saúde */}
-      <Stack.Screen name="Tuberculose" component={TuberculoseScreen} />
-      {/* Nível de Autonomia */}
+      <Stack.Screen
+        name="LEP"
+        component={LEPScreen}
+        options={{ title: 'LEP' }}
+      />
+      <Stack.Screen
+        name="LeiExercicioProfissional"
+        component={LeiExercicioProfissionalScreen}
+        options={{ title: 'Lei do Exercício Profissional' }}
+      />
+      <Stack.Screen
+        name="PNAISP"
+        component={PNAISPScreen}
+        options={{ title: 'PNAISP' }}
+      />
+      <Stack.Screen
+        name="PNAISPCartilha"
+        component={PNAISPCartilhaScreen}
+        options={{ title: 'Cartilha PNAISP' }}
+      />
+      <Stack.Screen
+        name="ResolucaoCargaHoraria"
+        component={ResolucaoCargaHorariaScreen}
+        options={{ title: 'Resolução de Carga Horária' }}
+      />
+      <Stack.Screen
+        name="RegimentoEnfermagem"
+        component={RegimentoEnfermagemSceen}
+        options={{ title: 'Regimento de Enfermagem' }}
+      />
+      <Stack.Screen
+        name="POPEnfermagem"
+        component={POPEnfermagemScreen}
+        options={{ title: 'POP Enfermagem' }}
+      />
+      <Stack.Screen
+        name="ManualTransporte"
+        component={ManualTransporteScreen}
+        options={{ title: 'Manual de Transporte' }}
+      />
+      <Stack.Screen
+        name="GuiaAtencaoPrimaria"
+        component={GuiaAtencaoPrimariaScreen}
+        options={{ title: 'Guia Atneção Primária' }}
+      />
 
-      {/* Fale com o DSP */}
-      
+      <Stack.Screen
+        name="Tuberculose"
+        component={TuberculoseScreen}
+        options={{ title: 'Tuberculose' }}
+      />
+      <Stack.Screen
+        name="ISTHIVAids"
+        component={ISTHIVAidsScreen}
+        options={{ title: 'ISTHIVAids' }}
+      />
+      <Stack.Screen
+        name="Escabiose"
+        component={EscabioseScreen}
+        options={{ title: 'Escabiose' }}
+      />
+      <Stack.Screen
+        name="EscalaAtividaEnfermagemScreen"
+        component={EscalaAtividaEnfermagemScreen}
+        options={{ title: 'Escala de Ativdade de Enfermagem' }}
+      />
+      <Stack.Screen
+        name="parabens"
+        component={ParabensScreen}
+        options={{ title: 'Parabéns!' }}
+      />
+      <Stack.Screen
+        name="quaseLa"
+        component={QuaseLaScreen}
+        options={{ title: 'Quase lá!' }}
+      />
+      <Stack.Screen
+        name="voceConsegue"
+        component={VoceConsegueScreen}
+        options={{ title: 'Você Consegue!' }}
+      />
     </Stack.Navigator>
   );
 }
