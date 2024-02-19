@@ -1,5 +1,5 @@
 import React from 'react';
-import { View } from 'react-native';
+import { View, Text } from 'react-native';
 import ButtonHomeIcon from '../components/ButtonHomeIcon';
 import styles from './Styles/Styles';
 
@@ -19,5 +19,10 @@ export default function HomeScreen() {
     { title: 'Fale com a DSP', route: 'FaleDSP', icon: 'call' },
   ];
 
-  return <View className={styles.screenHome}>{ButtonHomeIcon(buttons)}</View>;
+  return (
+    <View className={styles.screenHome}>
+      <Text className={styles.text}> Bem vindo ao A&G Enfermagem</Text>
+      {ButtonHomeIcon(buttons)}
+    </View>
+  );
 }

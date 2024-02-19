@@ -15,16 +15,14 @@ export default function ParabensScreen() {
   return (
     <View className={styles.screen}>
       <View className="flex-1 flex-row items-center">
-        <View className="lex-1 flex-col">
+        <View className="flex-col">
           {circles.map((circle, index) => (
             <Circle key={index} color={circle.color} text={circle.text} />
           ))}
         </View>
         <View className="flex-1">
-          <Text className={styles.text}>
-            {
-              'Você é capaz de executar de executar a gestão do seu trabalho com autnomia gerando mais resultados e contríbundio para uma assistência qualificada.'
-            }
+          <Text className="text-sm text-justify font-bold p-3">
+            {`Você é capaz de executar a gestão do seu trabalho com autonomia gerando mais resultados e contribuindo para uma assistência qualificada.`}
           </Text>
         </View>
       </View>

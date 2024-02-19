@@ -15,16 +15,14 @@ export default function VoceConsegueScreen() {
   return (
     <View className={styles.screen}>
       <View className="flex-1 flex-row items-center">
-        <View className="flex-1 flex-col">
+        <View className="flex-col">
           {circles.map((circle, index) => (
             <Circle key={index} color={circle.color} text={circle.text} />
           ))}
         </View>
         <View className="flex-1">
-          <Text className={styles.text}>
-            {
-              'Você precisa desenvolver melhor suas habilidades mostrando sua competência e capacidade técnica. Neste sentido ficará vidente o quanto você é responsáivel. Aumentar o diálogo com os profissionais de saúde e segurança contribuirá um ambiente organizacional mais tranquilo e poderá melhorar os resultados esperados com o seu trabalho. Tudo isto favorecerá sentimento de realização, melhor autonomia e organização de trabalho.'
-            }
+          <Text className="text-sm text-justify font-bold p-3">
+            {`Você precisa desenvolver melhor suas habilidades mostrando sua competência e capacidade técnica. Neste sentido ficará evidente o quanto você é responsável. Aumentar o diálogo com os profissionais de saúde e segurança contribuirá para um ambiente organizacional mais tranquilo e poderá melhorar os resultados esperados com o seu trabalho.\nTudo isto favorecerá um sentimento de realização, melhor autonomia e organização do trabalho.`}
           </Text>
         </View>
       </View>

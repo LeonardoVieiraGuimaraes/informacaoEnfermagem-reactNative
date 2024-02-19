@@ -1,7 +1,7 @@
 import React from 'react';
 import { WebView } from 'react-native-webview';
 
-export default function POPEnfermagem() {
+export default function GuiaAtencaoPrimariaScreen() {
   return (
     <WebView
       source={{
