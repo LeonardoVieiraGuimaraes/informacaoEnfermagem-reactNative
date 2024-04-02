@@ -11,9 +11,7 @@
       "distribution": "internal",
       "android": {"image": "latest"}
     },
-    "production": {
-
-    }
+    "production": {}
   },
   "submit": {
     "production": {}
