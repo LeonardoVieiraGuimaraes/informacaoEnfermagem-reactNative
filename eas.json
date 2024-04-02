@@ -8,9 +8,12 @@
       "distribution": "internal"
     },
     "preview": {
-      "distribution": "internal"
+      "distribution": "internal",
+      "android": {"image": "latest"}
     },
-    "production": {}
+    "production": {
+
+    }
   },
   "submit": {
     "production": {}
