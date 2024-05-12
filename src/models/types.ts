@@ -3,6 +3,7 @@ import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 
 export type RootStackParamList = {
   HomeStack: undefined;
+  AboutStack: undefined;
   Inicio: undefined;
   Legislacao: undefined;
   Lei: undefined;

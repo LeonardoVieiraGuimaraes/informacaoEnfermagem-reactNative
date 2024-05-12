@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, TouchableOpacity } from 'react-native';
+import { View, Text, TouchableOpacity, ScrollView } from 'react-native';
 import Ionicons from '@expo/vector-icons/Ionicons';
 import { NavigationProp } from '../models/types';
 import { useNavigation } from '@react-navigation/native';
@@ -9,20 +9,20 @@ export default function buttonDropDown(buttons: any[]) {
   const navigation = useNavigation<NavigationProp>();
 
   return (
-    <View className={styles.button1}>
+    <View className="flex gap-4 items-center mt-2">
       {buttons.map((button, index) => (
         <TouchableOpacity
           key={index}
-          className="bg-white w-full p-5"
+          className="bg-white w-11/12 rounded-2xl p-5"
           onPress={() => {
             navigation.navigate(button.route);
           }}
         >
-          <View className="flex flex-row items-center justify-between">
+          <View className="flex-row items-center justify-between">
             <Text className="text-black text-lg font-semibold">
               {button.title}
             </Text>
-            <Ionicons name={'arrow-forward'} size={30} color="green" />
+            <Ionicons name={'arrow-forward'} size={28} color="green" />
           </View>
         </TouchableOpacity>
       ))}

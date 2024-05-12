@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, Button, Linking } from 'react-native';
-import styles from '../Styles/Styles';
+import styles from '../../Styles/Styles';
 
 export default function FaleDSPScreen() {
   const handlePress = () => {

@@ -18,7 +18,14 @@ const Tab = createMaterialBottomTabNavigator();
 
 export default function BottomTabsRoutes() {
   return (
-    <Tab.Navigator barStyle={{ height: 90 }}>
+    <Tab.Navigator
+      barStyle={{
+        height: 90,
+        backgroundColor: '#f8f8f8',
+        borderTopWidth: 1,
+        borderTopColor: '#e7e7e7',
+      }}
+    >
       {screens.map((screen, index) => (
         <Tab.Screen
           key={index}

@@ -12,7 +12,6 @@ interface Button {
 export default function HomeScreen() {
   const buttons: Button[] = [
     { title: 'Legislação', route: 'Legislacao', icon: 'book' },
-
     { title: 'Normas e Rotinas', route: 'NormasRotinas', icon: 'list' },
     { title: 'Protocolo de Saúde', route: 'ProtocolosSaude', icon: 'medkit' },
     { title: 'Nível de Autonomia', route: 'NivelAutonomia', icon: 'bar-chart' },
@@ -20,9 +19,12 @@ export default function HomeScreen() {
   ];
 
   return (
-    <View className={styles.screenHome}>
-      <Text className={styles.titleHome}> {'Bem vindo \n A&G Enfermagem'}</Text>
-
+    <View className={styles.viewHome}>
+      <View className={styles.viewTitle}>
+        <Text className={styles.textTitle}>
+          {'Bem vindo \n A&G Enfermagem'}
+        </Text>
+      </View>
       {ButtonHomeIcon(buttons)}
     </View>
   );

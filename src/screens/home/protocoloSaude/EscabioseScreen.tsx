@@ -7,7 +7,7 @@ import BuscaAtivaDiagnostico from './escabiose/BuscaAtivaDiagnostico';
 import Tratamento from './escabiose/Tratamento';
 import Isolamento from './escabiose/Isolamento';
 import MedidasControle from './escabiose/MedidasControle';
-import styles from '../../Styles/Styles';
+import styles from '../../../Styles/Styles';
 
 interface Button {
   title: string;

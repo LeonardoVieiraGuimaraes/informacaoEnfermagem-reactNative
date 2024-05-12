@@ -4,6 +4,7 @@ import { RootStackParamList } from '../models/types';
 
 import HomeScreen from '../screens/HomeScreen';
 import LegislacaoScreen from '../screens/home/LegislacaoScreen';
+// import AboutScreen from '../screens/AboutScreen';
 import NormasRotinasScreen from '../screens/home/NormasRotinasScreen';
 import ProtocolosSaudeScreen from '../screens/home/ProtocolosSaudeScreen';
 import NivelAutonomiaScreen from '../screens/home/NivelAutonomiaScreen';
@@ -37,11 +38,17 @@ const Stack = createNativeStackNavigator<RootStackParamList>();
 
 export default function StackRoutes() {
   return (
-    <Stack.Navigator>
+    <Stack.Navigator
+      screenOptions={
+        {
+          // headerShown: false,
+        }
+      }
+    >
       <Stack.Screen
         name="HomeStack"
         component={HomeScreen}
-        options={{ title: 'Home' }}
+        options={{ title: 'A&G Enfermagem', headerShown: false }}
       />
 
       <Stack.Screen
