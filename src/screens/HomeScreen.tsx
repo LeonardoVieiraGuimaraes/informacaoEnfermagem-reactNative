@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text } from 'react-native';
 import ButtonHomeIcon from '../components/ButtonHomeIcon';
-import styles from './Styles/Styles';
+import styles from '../Styles/Styles';
 
 interface Button {
   title: string;
@@ -21,7 +21,8 @@ export default function HomeScreen() {
 
   return (
     <View className={styles.screenHome}>
-      <Text className={styles.text}> Bem vindo ao A&G Enfermagem</Text>
+      <Text className={styles.titleHome}> {'Bem vindo \n A&G Enfermagem'}</Text>
+
       {ButtonHomeIcon(buttons)}
     </View>
   );

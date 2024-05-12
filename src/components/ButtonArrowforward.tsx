@@ -3,12 +3,13 @@ import { View, Text, TouchableOpacity } from 'react-native';
 import Ionicons from '@expo/vector-icons/Ionicons';
 import { NavigationProp } from '../models/types';
 import { useNavigation } from '@react-navigation/native';
+import styles from '../Styles/Styles';
 
 export default function buttonDropDown(buttons: any[]) {
   const navigation = useNavigation<NavigationProp>();
 
   return (
-    <View className="flex pb-4 gap-4 items-center justify-center">
+    <View className={styles.button1}>
       {buttons.map((button, index) => (
         <TouchableOpacity
           key={index}
