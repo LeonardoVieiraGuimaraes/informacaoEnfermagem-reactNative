@@ -9,20 +9,24 @@ export default function buttonDropDown(buttons: any[]) {
   const navigation = useNavigation<NavigationProp>();
 
   return (
-    <View className="flex gap-4 items-center mt-2">
+    <View className={styles.buttonView}>
       {buttons.map((button, index) => (
         <TouchableOpacity
           key={index}
-          className="bg-white w-11/12 rounded-2xl p-5"
+          className={styles.buttonArrowForward}
           onPress={() => {
             navigation.navigate(button.route);
           }}
         >
-          <View className="flex-row items-center justify-between">
-            <Text className="text-black text-lg font-semibold">
+          <View className={styles.buttonViewArrowforwardItens}>
+            <Text className={styles.buttonViewArrowforwardText}>
               {button.title}
             </Text>
-            <Ionicons name={'arrow-forward'} size={28} color="green" />
+            <Ionicons
+              name={'arrow-forward'}
+              size={styles.iconsSize}
+              color={styles.iconsColor}
+            />
           </View>
         </TouchableOpacity>
       ))}

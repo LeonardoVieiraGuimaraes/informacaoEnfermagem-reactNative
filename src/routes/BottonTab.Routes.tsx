@@ -33,7 +33,7 @@ export default function BottomTabsRoutes() {
           component={screen.component}
           options={{
             tabBarIcon: () => (
-              <AntDesign name={screen.icon} size={28} color="green" />
+              <AntDesign name={screen.icon} size={28} color="darkgreen" />
             ),
           }}
         />

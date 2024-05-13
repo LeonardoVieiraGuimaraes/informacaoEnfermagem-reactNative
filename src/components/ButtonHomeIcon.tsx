@@ -20,9 +20,8 @@ export default function buttonDropDown(buttons: any[]) {
         >
           <Ionicons
             name={button.icon}
-            size={40}
-            color="darkgreen"
-            className="mr-3"
+            size={styles.iconsSizeHome}
+            color={styles.iconsColor}
           />
           <Text className={styles.buttonTextHome}>{button.title}</Text>
         </TouchableOpacity>
