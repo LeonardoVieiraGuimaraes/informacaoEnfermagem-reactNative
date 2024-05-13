@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { ScrollView, View } from 'react-native';
-import ButtonArrowForward from '../../components/ButtonArrowForward';
+import ButtonArrowForward from '../../components/ButtonArrowforward';
 import ButtonDropDown from '../../components/ButtonDropDown';
 import POPEnfermagem from './normasRotinas/POPEnfermagem';
 import ManualTransporte from './normasRotinas/ManualTransporte';

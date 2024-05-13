@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Text, TouchableOpacity, ScrollView } from 'react-native';
 import { NavigationProp } from '../../models/types';
 import { useNavigation } from '@react-navigation/native';
-import ButtonArrowforward from '../../components/ButtonArrowForward';
+import ButtonArrowforward from '../../components/ButtonArrowforward';
 import styles from '../../Styles/Styles';
 
 interface Button {
