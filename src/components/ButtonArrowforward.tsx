@@ -5,7 +5,7 @@ import { NavigationProp } from '../models/types';
 import { useNavigation } from '@react-navigation/native';
 import styles from '../Styles/Styles';
 
-export default function buttonDropDown(buttons: any[]) {
+export default function ButtonArrowForward(buttons: any[]) {
   const navigation = useNavigation<NavigationProp>();
 
   return (

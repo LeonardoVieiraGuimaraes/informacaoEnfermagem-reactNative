@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { ScrollView, View } from 'react-native';
-import ButtonSecond from '../../components/ButtonArrowForward';
+import ButtonArrowForward from '../../components/ButtonArrowForward';
 import ButtonDropDown from '../../components/ButtonDropDown';
 import POPEnfermagem from './normasRotinas/POPEnfermagem';
 import ManualTransporte from './normasRotinas/ManualTransporte';
@@ -53,7 +53,7 @@ export default function NormasRotinasScreen() {
   return (
     <View className={styles.screen}>
       <ScrollView className={styles.scrollView}>
-        {ButtonSecond(buttons)}
+        {ButtonArrowForward(buttons)}
         {ButtonDropDown(buttons1)}
       </ScrollView>
     </View>
