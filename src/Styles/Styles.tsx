@@ -4,21 +4,20 @@ import buttonDropDown from '../components/ButtonHomeIcon';
 const styles = {
   // Estilos para o tela home e about
   viewHome: 'bg-green-200 h-full p-2',
-  viewTitle: 'bg-white rounded-lg p-2 m-2 my-6',
+  viewTitle: 'bg-white rounded-lg p-2 m-2 my-6 border-2',
   textTitle: 'text-2xl text-center font-bold my-2 bg-white p-2 rounded-lg',
-  viewAbout: 'bg-green-200 p-2 h-full',
-  viewText: 'bg-white rounded-lg p-2 m-4 my-2',
-  text: 'text-lg text-justify m-4 bg-white p-4 rounded-lg leading-10',
+  viewAbout: 'bg-green-200 p-2 h-full border-2',
+  viewText: 'bg-white rounded-lg p-2 m-2 my-2 border-2',
+  text: 'text-lg text-justify m-2 bg-white p-2 rounded-lg leading-10',
 
   // Estilos para os componentes ButtonHomeIcon
-  buttonViewHome:
-    'flex-row flex-wrap gap-6 justify-center h-full align-middle pt-8',
+  buttonViewHome: 'flex-row flex-wrap gap-6 justify-center h-full pt-6',
   buttonHome:
-    'bg-white rounded-lg shadow-lg items-center p-2 justify-center w-32 h-32',
+    'bg-white rounded-lg shadow-lg items-center p-2 justify-center w-32 h-32 border-2',
   buttonTextHome: 'text-black text-lg font-semibold text-center',
 
-  buttonView: 'flex gap-4 items-center mt-2',
-  buttonArrowForward: 'bg-white w-11/12 rounded-2xl p-5',
+  ViewArrowForward: 'flex gap-4 items-center mb-4',
+  buttonArrowForward: 'bg-blue-200 w-11/12 rounded-lg p-4 border-2',
   buttonViewArrowforwardItens: 'flex-row items-center justify-between',
   buttonViewArrowforwardText: 'text-black text-lg font-semibold',
 
@@ -27,12 +26,13 @@ const styles = {
   iconsSize: 26,
 
   // Estilos para os componentes ButtonHomeIcon
-  buttonViewDropDown: 'w-11/12 rounded-2xl',
-  buttonDropDown: 'bg-white rounded-2xl p-5',
+  ViewDropDown: 'flex gap-4 items-center',
+  buttonViewDropDown: 'bg-white w-11/12 rounded-lg border-2 p-4',
   buttonDropDownItens: 'flex flex-row justify-between items-center',
   buttonViewDropDownText: 'text-black text-lg font-semibold',
 
   screen: 'bg-green-200 h-full',
+  scrollView: 'mt-4 mb-4',
 
   // Estilo para campos de entrada de texto
 };

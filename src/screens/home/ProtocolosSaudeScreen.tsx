@@ -23,7 +23,9 @@ export default function ProtocolosSaudeScreen() {
 
   return (
     <View className={styles.screen}>
-      <ScrollView>{ButtonSecond(buttons)}</ScrollView>
+      <ScrollView className={styles.scrollView}>
+        {ButtonSecond(buttons)}
+      </ScrollView>
     </View>
   );
 }

@@ -42,7 +42,11 @@ export default function GuiaAtencaoPrimaria() {
   ];
   return (
     <View>
-      <Text></Text>
+      <Text className={styles.text}>
+        {
+          'Regulamento e Normas de Procedimentos do Sistema Prisional de Minas Gerais\nClique no botão abaixo para acessar:'
+        }
+      </Text>
       {ButtonArrowforward(buttons)}
     </View>
   );

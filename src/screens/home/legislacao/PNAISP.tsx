@@ -11,7 +11,7 @@ interface Button {
 export default function PNAISP() {
   const buttons: Button[] = [
     {
-      title: 'PNAISP',
+      title: 'Portaria Interministerial',
       route: 'PNAISP',
     },
     {
@@ -21,7 +21,11 @@ export default function PNAISP() {
   ];
   return (
     <View>
-      <Text></Text>
+      <Text className={styles.text}>
+        {
+          'Política Nacional de Atenção Integral à Saúde das Pessoas Privadas de Liberdade no Sistema Prisional.\nClique no botão abaixo para acessar:'
+        }
+      </Text>
       {ButtonArrowforward(buttons)}
     </View>
   );

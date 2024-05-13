@@ -31,6 +31,7 @@
 import React from 'react';
 import { Text, View } from 'react-native';
 import ButtonArrowforward from '../../../components/ButtonArrowForward';
+import styles from '../../../Styles/Styles';
 
 interface Button {
   title: string;
@@ -46,7 +47,9 @@ export default function GuiaAtencaoPrimaria() {
   ];
   return (
     <View>
-      <Text></Text>
+      <Text className={styles.text}>
+        {'Lei de Execução Penal\nClique no botão abaixo para acessar:'}
+      </Text>
       {ButtonArrowforward(buttons)}
     </View>
   );

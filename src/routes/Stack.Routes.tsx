@@ -86,7 +86,7 @@ export default function StackRoutes() {
       <Stack.Screen
         name="Treinamento"
         component={TreinamentoScreen}
-        options={{ title: 'Protocolos de Saúde' }}
+        options={{ title: 'Treinamento' }}
       />
       <Stack.Screen
         name="NivelAutonomia"

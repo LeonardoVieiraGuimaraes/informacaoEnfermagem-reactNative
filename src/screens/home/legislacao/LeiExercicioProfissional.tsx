@@ -11,13 +11,15 @@ interface Button {
 export default function LeiExercicioProfissional() {
   const buttons: Button[] = [
     {
-      title: 'Lei do Exercico Profissional',
+      title: 'Lei do Exercício Profissional',
       route: 'LeiExercicioProfissional',
     },
   ];
   return (
     <View>
-      <Text></Text>
+      <Text className={styles.text}>
+        {'Clique no botão abaixo para acessar:'}
+      </Text>
       {ButtonArrowforward(buttons)}
     </View>
   );

@@ -39,7 +39,7 @@ export default function LegislacaoScreen() {
       informacao: <LEP />,
     },
     {
-      title: 'Lei do Exercicio Profissional',
+      title: 'Lei do Exercício Profissional',
       isOpen: isOpenLeiExercicioProfissional,
       setIsOpen: setIsOpenLeiExercicioProfissional,
       informacao: <LeiExercicioProfissional />,
@@ -60,7 +60,9 @@ export default function LegislacaoScreen() {
 
   return (
     <View className={styles.screen}>
-      <ScrollView>{buttonDropDown(buttons)}</ScrollView>
+      <ScrollView className={styles.scrollView}>
+        {buttonDropDown(buttons)}
+      </ScrollView>
     </View>
   );
 }

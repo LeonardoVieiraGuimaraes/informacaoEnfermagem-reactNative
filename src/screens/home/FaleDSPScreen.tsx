@@ -1,5 +1,6 @@
 import React from 'react';
-import { View, Text, Button, Linking } from 'react-native';
+import { View, Text, Button, Linking, TouchableOpacity } from 'react-native';
+import { MaterialCommunityIcons } from '@expo/vector-icons';
 import styles from '../../Styles/Styles';
 
 export default function FaleDSPScreen() {
@@ -20,8 +21,17 @@ export default function FaleDSPScreen() {
 
   return (
     <View className={styles.screen}>
-      {/* <Text className={styles.text}>Fale com:</Text> */}
-      <Button title="Enviar e-mail" onPress={handlePress} />
+      <TouchableOpacity
+        onPress={handlePress}
+        className={styles.buttonArrowForward}
+      >
+        <View className={styles.buttonViewArrowforwardItens}>
+          <Text className={styles.buttonViewArrowforwardText}>
+            Enviar Email
+          </Text>
+          <MaterialCommunityIcons name="email" size={24} color="black" />
+        </View>
+      </TouchableOpacity>
     </View>
   );
 }

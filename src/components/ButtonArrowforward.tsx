@@ -9,7 +9,7 @@ export default function buttonDropDown(buttons: any[]) {
   const navigation = useNavigation<NavigationProp>();
 
   return (
-    <View className={styles.buttonView}>
+    <View className={styles.ViewArrowForward}>
       {buttons.map((button, index) => (
         <TouchableOpacity
           key={index}

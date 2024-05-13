@@ -17,7 +17,9 @@ export default function ResolucaoCargaHoraria() {
   ];
   return (
     <View>
-      <Text></Text>
+      <Text className={styles.text}>
+        {'Clique no botão abaixo para acessar:'}
+      </Text>
       {ButtonArrowforward(buttons)}
     </View>
   );

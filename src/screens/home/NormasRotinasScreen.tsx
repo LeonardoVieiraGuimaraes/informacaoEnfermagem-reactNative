@@ -52,7 +52,7 @@ export default function NormasRotinasScreen() {
 
   return (
     <View className={styles.screen}>
-      <ScrollView>
+      <ScrollView className={styles.scrollView}>
         {ButtonSecond(buttons)}
         {ButtonDropDown(buttons1)}
       </ScrollView>

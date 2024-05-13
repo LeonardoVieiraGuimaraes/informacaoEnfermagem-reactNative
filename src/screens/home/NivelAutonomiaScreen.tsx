@@ -20,11 +20,11 @@ export default function NivelAutonomia() {
   return (
     <View className={styles.screen}>
       <Text className={styles.text}>
-        Autonomia profissional se refere à capacidade de realizar suas tarefas
-        de maneira independente, com a possibilidade de tomar decisões e agir a
-        partir das suas habilidades e experiências.
+        {
+          'Autonomia profissional se refere à capacidade de realizar suas tarefas de maneira independente, com a possibilidade de tomar decisões e agir a partir das suas habilidades e experiências.'
+        }
       </Text>
-      <View className="flex-1 justify-center">{ButtonHomeIcon(buttons)}</View>
+      <View className={styles.viewHome}>{ButtonHomeIcon(buttons)}</View>
     </View>
   );
 }
