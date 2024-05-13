@@ -27,7 +27,10 @@ const styles = {
   iconsSize: 26,
 
   // Estilos para os componentes ButtonHomeIcon
-  buttonViewDropDown: '',
+  buttonViewDropDown: 'w-11/12 rounded-2xl',
+  buttonDropDown: 'bg-white rounded-2xl p-5',
+  buttonDropDownItens: 'flex flex-row justify-between items-center',
+  buttonViewDropDownText: 'text-black text-lg font-semibold',
 
   screen: 'bg-green-200 h-full',
 

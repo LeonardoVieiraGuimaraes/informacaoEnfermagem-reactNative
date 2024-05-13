@@ -9,11 +9,11 @@ export default function ButtonDropDown(buttons: any[]) {
       {buttons.map((button, index) => (
         <View className={styles.buttonViewDropDown} key={index}>
           <TouchableOpacity
-            className="bg-white rounded-2xl p-5"
+            className={styles.buttonDropDown}
             onPress={() => button.setIsOpen(!button.isOpen)}
           >
-            <View className="flex flex-row justify-between items-center">
-              <Text className="text-black text-lg font-semibold">
+            <View className={styles.buttonDropDownItens}>
+              <Text className={styles.buttonViewDropDownText}>
                 {button.title}
               </Text>
               <Ionicons
@@ -23,7 +23,7 @@ export default function ButtonDropDown(buttons: any[]) {
               />
             </View>
           </TouchableOpacity>
-          {button.isOpen && <View className="p-4">{button.informacao}</View>}
+          {button.isOpen && <View>{button.informacao}</View>}
         </View>
       ))}
     </View>
