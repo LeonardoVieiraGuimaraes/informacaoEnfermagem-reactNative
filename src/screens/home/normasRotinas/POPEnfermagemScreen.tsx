@@ -1,43 +1,35 @@
-import React from 'react';
-import { StyleSheet, View } from 'react-native';
-import PDFView from 'react-native-pdf';
+import { SafeAreaView, useWindowDimensions } from 'react-native';
+import Pdf from 'react-native-pdf';
 
-export default function POPEnfermagemScreen() {
-  const source = {
-    uri: 'file://src/assets/files/POP_2023_DIVULGADO_12_5_ASCOM_REVISADO.pdf',
-  };
+const source = {
+  uri: 'file://src/assets/files/POP_2023_DIVULGADO_12_5_ASCOM_REVISADO.pdf',
+  cache: true,
+};
+
+export default function App() {
+  const { width, height } = useWindowDimensions();
 
   return (
-    <View style={styles.container}>
-      <PDFView
+    <SafeAreaView style={{ flex: 1 }}>
+      <Pdf
         source={source}
         onLoadComplete={(numberOfPages, filePath) => {
-          console.log(`number of pages: ${numberOfPages}`);
+          console.log(`Number of pages: ${numberOfPages}`);
         }}
         onPageChanged={(page, numberOfPages) => {
-          console.log(`current page: ${page}`);
+          console.log(`Current page: ${page}`);
         }}
         onError={(error) => {
           console.log(error);
         }}
-        style={styles.pdf}
+        onPressLink={(uri) => {
+          console.log(`Link pressed: ${uri}`);
+        }}
+        style={{ flex: 1, width, height }}
       />
-    </View>
+    </SafeAreaView>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'flex-start',
-    alignItems: 'center',
-    marginTop: 25,
-  },
-  pdf: {
-    flex: 1,
-    width: '100%',
-  },
-});
 
 // import React from 'react';
 // import { WebView } from 'react-native-webview';
