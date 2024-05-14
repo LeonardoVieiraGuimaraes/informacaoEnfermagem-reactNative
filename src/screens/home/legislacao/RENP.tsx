@@ -26,7 +26,7 @@
 import React from 'react';
 import { Text, View } from 'react-native';
 import ButtonArrowforward from '../../../components/ButtonArrowforward';
-import styles from '../../../Styles/Styles';
+import styles from '../../../assets/styles/styles';
 
 interface Button {
   title: string;

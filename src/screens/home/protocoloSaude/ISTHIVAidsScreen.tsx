@@ -9,7 +9,7 @@ import Tratamento from './isthivaids/Tratamento';
 import Prevencao from './isthivaids/Prevencao';
 import OrientacaoTranferencia from './isthivaids/OrientacaoTranferencia';
 import ButtonDropDown from '../../../components/ButtonDropDown';
-import styles from '../../../Styles/Styles';
+import styles from '../../../assets/styles/styles';
 
 interface Button {
   title: string;

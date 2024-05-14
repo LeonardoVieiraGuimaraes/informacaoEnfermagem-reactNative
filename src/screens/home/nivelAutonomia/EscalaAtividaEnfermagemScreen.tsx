@@ -3,7 +3,7 @@ import { View, Text, Button, ScrollView, StyleSheet } from 'react-native';
 import { Picker } from '@react-native-picker/picker';
 import { useNavigation } from '@react-navigation/native';
 import { NavigationProp } from '../../../models/types';
-import styles from '../../../Styles/Styles';
+import styles from '../../../assets/styles/styles';
 
 const questions = [
   'Planejo uma carreira para mim próprio(a) e, regularmente, faço a sua revisão no sentido de atingir os objetivos traçados.',

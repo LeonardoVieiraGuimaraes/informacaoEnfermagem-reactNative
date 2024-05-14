@@ -1,5 +1,5 @@
 import { Text } from 'react-native';
-import styles from '../../../../Styles/Styles';
+import styles from '../../../../assets/styles/styles';
 
 export default function Diagnostico() {
   return (

@@ -5,7 +5,7 @@ import ButtonDropDown from '../../components/ButtonDropDown';
 import POPEnfermagem from './normasRotinas/POPEnfermagem';
 import ManualTransporte from './normasRotinas/ManualTransporte';
 import GuiaAtencaoPrimaria from './normasRotinas/GuiaAtencaoPrimaria';
-import styles from '../../Styles/Styles';
+import styles from '../../assets/styles/styles';
 interface Button {
   title: string;
   route: any;

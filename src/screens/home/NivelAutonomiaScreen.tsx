@@ -1,13 +1,8 @@
 import React from 'react';
 import { Text, View } from 'react-native';
 import ButtonHomeIcon from '../../components/ButtonHomeIcon';
-import styles from '../../Styles/Styles';
-
-interface Button {
-  title: string;
-  route: String;
-  icon: any;
-}
+import styles from '../../assets/styles/styles';
+import { Button } from '../../models/typesButton';
 
 export default function NivelAutonomia() {
   const buttons: Button[] = [

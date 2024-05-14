@@ -4,7 +4,7 @@ const styles = {
   viewHome: 'bg-green-200 h-full p-2',
   viewTitle: 'bg-white rounded-lg p-2 m-2 my-6 border-2',
   textTitle: 'text-2xl text-center font-bold my-2 bg-white p-2 rounded-lg',
-  viewAbout: 'bg-green-200 p-2 h-full border-2',
+  viewAbout: 'bg-green-200 p-2 h-full',
   viewText: 'bg-white rounded-lg p-2 m-2 my-2 border-2',
   text: 'text-lg text-justify m-2 bg-white p-2 rounded-lg leading-10',
 

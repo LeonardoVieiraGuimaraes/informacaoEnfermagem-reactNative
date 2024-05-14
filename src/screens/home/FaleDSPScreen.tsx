@@ -1,7 +1,16 @@
 import React from 'react';
-import { View, Text, Button, Linking, TouchableOpacity } from 'react-native';
+import { View, Text, Linking, TouchableOpacity } from 'react-native';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
-import styles from '../../Styles/Styles';
+import styles from '../../assets/styles/styles';
+import ButtonArrowforward from '../../components/ButtonArrowforward';
+import ButtonHomeIcon from '../../components/ButtonHomeIcon';
+import ButtonIcon from '../../components/ButtonIcon';
+
+interface Button {
+  title: string;
+  route: any;
+  icon: any;
+}
 
 export default function FaleDSPScreen() {
   const handlePress = () => {
@@ -19,19 +28,9 @@ export default function FaleDSPScreen() {
     });
   };
 
-  return (
-    <View className={styles.screen}>
-      <TouchableOpacity
-        onPress={handlePress}
-        className={styles.buttonArrowForward}
-      >
-        <View className={styles.buttonViewArrowforwardItens}>
-          <Text className={styles.buttonViewArrowforwardText}>
-            Enviar Email
-          </Text>
-          <MaterialCommunityIcons name="email" size={24} color="black" />
-        </View>
-      </TouchableOpacity>
-    </View>
-  );
+  const buttons: Button[] = [
+    { title: 'Email', route: handlePress, icon: 'book' },
+  ];
+
+  return <View className={styles.screen}>{ButtonIcon(buttons)}</View>;
 }

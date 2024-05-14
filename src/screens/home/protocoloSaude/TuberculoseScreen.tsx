@@ -9,7 +9,7 @@ import Isolamento from './tuberculose/Isolamento';
 import Tratamento from './tuberculose/Tratamento';
 import OrientacaoTranferencia from './tuberculose/OrientacaoTranferencia';
 import ButtonDropDown from '../../../components/ButtonDropDown';
-import styles from '../../../Styles/Styles';
+import styles from '../../../assets/styles/styles';
 
 interface Button {
   title: string;
