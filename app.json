@@ -1,15 +1,12 @@
 {
   "expo": {
-    "plugins": [
-      "@config-plugins/react-native-blob-util",
-      "@config-plugins/react-native-pdf"
-    ],
+    
     "name": "A&G Enfermagem",
     "slug": "informacaoEnfermagem-reactNative",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-  
+
     "userInterfaceStyle": "light",
     "splash": {
       "image": "./assets/splash.png",

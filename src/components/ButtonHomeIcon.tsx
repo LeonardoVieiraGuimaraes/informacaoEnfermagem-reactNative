@@ -3,7 +3,7 @@ import { View, Text, TouchableOpacity } from 'react-native';
 import Ionicons from '@expo/vector-icons/Ionicons';
 import { NavigationProp } from '../models/types';
 import { useNavigation } from '@react-navigation/native';
-import styles from '../Styles/Styles';
+import styles from '../assets/styles/styles';
 
 export default function buttonDropDown(buttons: any[]) {
   const navigation = useNavigation<NavigationProp>();

@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, TouchableOpacity, ScrollView } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
-import styles from '../Styles/Styles';
+import styles from '../assets/styles/styles';
 
 export default function ButtonDropDown(buttons: any[]) {
   return (

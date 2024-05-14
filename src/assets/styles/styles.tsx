@@ -1,5 +1,3 @@
-import buttonDropDown from '../components/ButtonHomeIcon';
-
 // Define um objeto para agrupar os estilos
 const styles = {
   // Estilos para o tela home e about
@@ -33,7 +31,7 @@ const styles = {
 
   screen: 'bg-green-200 h-full',
   scrollView: 'mt-4 mb-4',
-
+  cicle: `w-32 h-32 rounded-full items-center justify-center`,
   // Estilo para campos de entrada de texto
 };
 

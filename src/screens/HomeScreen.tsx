@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text } from 'react-native';
 import ButtonHomeIcon from '../components/ButtonHomeIcon';
-import styles from '../Styles/Styles';
+import styles from '../assets/styles/styles';
 
 interface Button {
   title: string;
