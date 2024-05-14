@@ -5,7 +5,7 @@ export default function GuiaAtencaoPrimariaScreen() {
   return (
     <WebView
       source={{
-        uri: 'https://www.corenmg.gov.br/wp-content/uploads/2019/12/Guia-de-Orientacoes-para-a-Atuacao-da-Equipe-de-Enfermagem-na-Atencao-Primaria-a-Saude.pdf',
+        uri: 'https://drive.google.com/file/d/1pVqAZ_C9VD2g6MhiVxPE3sKboK_baPFF/view?usp=sharing',
       }}
     />
   );

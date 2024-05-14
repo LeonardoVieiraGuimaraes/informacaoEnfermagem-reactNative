@@ -62,7 +62,7 @@ export default function NormasRotinasScreen() {
       informacao: <Tratamento />,
     },
     {
-      title: 'Orientacao para Tranferencia',
+      title: 'Orientação para Transferência',
       isOpen: isOpenOrientacaoTranferencia,
       setIsOpen: setIsOpenOrientacaoTranferencia,
       icon_down: 'arrow-down',
@@ -73,7 +73,9 @@ export default function NormasRotinasScreen() {
 
   return (
     <View className={styles.screen}>
-      <ScrollView>{ButtonDropDown(buttons)}</ScrollView>
+      <ScrollView className={styles.scrollView}>
+        {ButtonDropDown(buttons)}
+      </ScrollView>
     </View>
   );
 }

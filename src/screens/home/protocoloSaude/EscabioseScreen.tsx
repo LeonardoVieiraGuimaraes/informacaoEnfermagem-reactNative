@@ -48,7 +48,7 @@ export default function EscabioseScreen() {
     },
 
     {
-      title: 'Meidas de Controle',
+      title: 'Medidas de Controle',
       isOpen: isOpenMedidasControle,
       setIsOpen: setIsOpenMedidasControle,
       informacao: <MedidasControle />,
@@ -57,7 +57,9 @@ export default function EscabioseScreen() {
 
   return (
     <View className={styles.screen}>
-      <ScrollView>{ButtonDropDown(buttons)}</ScrollView>
+      <ScrollView className={styles.scrollView}>
+        {ButtonDropDown(buttons)}
+      </ScrollView>
     </View>
   );
 }

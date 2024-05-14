@@ -1,5 +1,5 @@
 export interface Button {
   title: string;
-  route: string;
+  route: any;
   icon: any;
 }

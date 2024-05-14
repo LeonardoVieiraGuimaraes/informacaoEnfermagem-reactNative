@@ -30,6 +30,14 @@ export default function NormasRotinasScreen() {
 
   const buttons: Button[] = [
     {
+      title: 'Prevenção',
+      isOpen: isOpenPrevencao,
+      setIsOpen: setIsOpenPrevencao,
+      icon_down: 'arrow-down',
+      icon_up: 'arrow-up',
+      informacao: <Prevencao />,
+    },
+    {
       title: 'Treinamento',
       isOpen: isOpenTreinamento,
       setIsOpen: setIsOpenTreinamento,
@@ -53,17 +61,9 @@ export default function NormasRotinasScreen() {
       icon_up: 'arrow-up',
       informacao: <Tratamento />,
     },
-    {
-      title: 'Prevenção',
-      isOpen: isOpenPrevencao,
-      setIsOpen: setIsOpenPrevencao,
-      icon_down: 'arrow-down',
-      icon_up: 'arrow-up',
-      informacao: <Prevencao />,
-    },
 
     {
-      title: 'Orientacao para Tranferencia',
+      title: 'Orientação para Transferência',
       isOpen: isOpenOrientacaoTranferencia,
       setIsOpen: setIsOpenOrientacaoTranferencia,
       icon_down: 'arrow-down',
@@ -74,7 +74,9 @@ export default function NormasRotinasScreen() {
 
   return (
     <View className={styles.screen}>
-      <ScrollView>{ButtonDropDown(buttons)}</ScrollView>
+      <ScrollView className={styles.scrollView}>
+        {ButtonDropDown(buttons)}
+      </ScrollView>
     </View>
   );
 }

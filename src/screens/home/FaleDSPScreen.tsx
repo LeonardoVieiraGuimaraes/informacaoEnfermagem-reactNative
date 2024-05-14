@@ -1,16 +1,8 @@
 import React from 'react';
 import { View, Text, Linking, TouchableOpacity } from 'react-native';
-import { MaterialCommunityIcons } from '@expo/vector-icons';
 import styles from '../../assets/styles/styles';
-import ButtonArrowforward from '../../components/ButtonArrowforward';
-import ButtonHomeIcon from '../../components/ButtonHomeIcon';
 import ButtonIcon from '../../components/ButtonIcon';
-
-interface Button {
-  title: string;
-  route: any;
-  icon: any;
-}
+import { Button } from '../../models/typesButton';
 
 export default function FaleDSPScreen() {
   const handlePress = () => {
@@ -32,5 +24,15 @@ export default function FaleDSPScreen() {
     { title: 'Email', route: handlePress, icon: 'book' },
   ];
 
-  return <View className={styles.screen}>{ButtonIcon(buttons)}</View>;
+  return (
+    <View className={styles.screen}>
+      <View className={styles.viewTitle}>
+        <Text className={styles.textTitle}>
+          {'Fale com a Diretoria de Saúde Prisional (DSP)'}
+        </Text>
+      </View>
+
+      {ButtonIcon(buttons)}
+    </View>
+  );
 }

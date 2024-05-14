@@ -11,7 +11,7 @@ interface Button {
 export default function Treinamento() {
   const buttons: Button[] = [
     {
-      title: 'Treinamento',
+      title: 'TELELAB',
       route: 'Treinamento',
     },
   ];
