@@ -5,7 +5,7 @@ export default function LEPScreen() {
   return (
     <WebView
       source={{
-        uri: 'https://www.planalto.gov.br/ccivil_03/leis/l7210.htm',
+        uri: 'https://drive.google.com/file/d/1zjav8GCnQchro0bJUsN3tn4zU0YwOLel/view?usp=sharing',
       }}
     />
   );
