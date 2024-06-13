@@ -14,17 +14,17 @@ export default function AboutScreen() {
           'Este é um instrumento para subsidiar o seu processo de trabalho por meio de informações gerais com o objetivo de apresentar as estratégias para alcançar o melhor nível de autonomia e contribuir com a gestão da enfermagem.\n'
         }
       </Text>
-      <Text className="text-lg  text-center">{'Produção:'}</Text>
+      <Text className="text-lg  text-center font-bold">{'Produção:'}</Text>
       <Text className="text-lg  text-center">
         {
           'Leslie Diniz Alves\nLeonardo Vieira Guimarães \nSérgio Valverde M. Santos'
         }
       </Text>
-      <Text className="text-lg  text-center">{'\nApoio:'}</Text>
+      <Text className="text-lg  text-center font-bold">{'\nApoio:'}</Text>
 
       <Image
         source={require('../assets/img/Logos2.jpg')}
-        style={{ transform: [{ scale: 0.9 }] }} // Reduz a imagem para 50% do tamanho original
+        style={{ transform: [{ scale: 0.8 }] }} // Reduz a imagem para 50% do tamanho original
       />
     </View>
   );
