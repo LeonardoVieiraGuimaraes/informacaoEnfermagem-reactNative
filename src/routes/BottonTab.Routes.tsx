@@ -3,7 +3,7 @@ import { createMaterialBottomTabNavigator } from '@react-navigation/material-bot
 import { AntDesign } from '@expo/vector-icons';
 import AboutScreen from '../screens/AboutScreen';
 import StackRoutes from './Stack.Routes';
-import ApoioScreen from '../screens/ApoioScreen';
+// import ApoioScreen from '../screens/ApoioScreen';
 
 interface Screen {
   name: string;
@@ -14,7 +14,7 @@ interface Screen {
 const screens: Screen[] = [
   { name: 'Home', component: StackRoutes, icon: 'home' },
   { name: 'Sobre', component: AboutScreen, icon: 'infocirlceo' },
-  { name: 'Apoio', component: ApoioScreen, icon: 'infocirlceo' },
+  // { name: 'Apoio', component: ApoioScreen, icon: 'infocirlceo' },
 ];
 const Tab = createMaterialBottomTabNavigator();
 
