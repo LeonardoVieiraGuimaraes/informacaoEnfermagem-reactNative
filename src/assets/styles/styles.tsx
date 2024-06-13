@@ -3,8 +3,8 @@ const styles = {
   // Estilos para o tela home e about
   viewHome: 'bg-green-200 h-full p-2 mt-2',
   viewTitle: 'bg-white rounded-lg p-2 m-2 my-6 border-2',
-  textTitle: 'text-2xl text-center font-bold my-2 bg-white p-2 rounded-lg',
-  viewAbout: 'bg-green-200 p-2 h-full mt-2',
+  textTitle: 'text-2xl text-center font-bold my-2  p-2 rounded-lg',
+  viewAbout: 'bg-green-200 p-4 h-full items-center justify-center ',
   viewText: 'bg-white rounded-lg p-2 m-2 my-2 border-2',
   text: 'text-lg text-justify m-2 bg-white p-2 rounded-lg leading-10',
 
