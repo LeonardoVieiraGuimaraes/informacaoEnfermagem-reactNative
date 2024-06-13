@@ -68,3 +68,12 @@ Por favor, leia CONTRIBUTING.md para detalhes sobre o nosso código de conduta e
 
 Licença
 Este projeto está licenciado sob a Licença MIT - veja o arquivo LICENSE.md para detalhes.
+
+
+npx expo-doctor@latest
+
+npx expo install --check
+
+eas build -p android --profile preview
+
+eas build
