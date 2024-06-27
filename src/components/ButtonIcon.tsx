@@ -6,8 +6,6 @@ import { useNavigation } from '@react-navigation/native';
 import styles from '../assets/styles/styles';
 
 export default function buttonDropDown(buttons: any[]) {
-  const navigation = useNavigation<NavigationProp>();
-
   return (
     <View className={styles.buttonViewHome}>
       {buttons.map((button, index) => (

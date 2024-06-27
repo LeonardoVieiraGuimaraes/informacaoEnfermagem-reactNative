@@ -1,15 +1,15 @@
 // Define um objeto para agrupar os estilos
 const styles = {
   // Estilos para o tela home e about
-  viewHome: 'bg-green-200 h-full p-2 mt-2',
-  viewTitle: 'bg-white rounded-lg p-2 m-2 my-6 border-2',
+  viewHome: 'bg-green-200 h-full p-4 mt-8',
+  viewTitle: 'bg-white rounded-lg p-2 m-2 my-2 border-2',
   textTitle: 'text-2xl text-center font-bold my-2  p-2 rounded-lg',
   viewAbout: 'bg-green-200 p-4 h-full items-center justify-center ',
-  viewText: 'bg-white rounded-lg p-2 m-2 my-2 border-2',
+  viewText: 'bg-white rounded-lg p-3 m-3 my-3 border-2',
   text: 'text-lg text-justify m-2 bg-white p-2 rounded-lg leading-10',
 
   // Estilos para os componentes ButtonHomeIcon
-  buttonViewHome: 'flex-row flex-wrap gap-6 justify-center h-full pt-6',
+  buttonViewHome: 'flex-row flex-wrap gap-6 justify-center pt-6',
   buttonHome:
     'bg-white rounded-lg shadow-lg items-center p-2 justify-center w-32 h-32 border-2',
   buttonTextHome: 'text-black text-lg font-semibold text-center',

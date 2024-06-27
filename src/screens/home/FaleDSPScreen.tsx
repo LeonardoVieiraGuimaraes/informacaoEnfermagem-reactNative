@@ -5,7 +5,7 @@ import ButtonIcon from '../../components/ButtonIcon';
 import { Button } from '../../models/typesButton';
 
 export default function FaleDSPScreen() {
-  const handlePress = () => {
+  const handleEmailPress = () => {
     const email = 'dspsaip@seguranca.mg.gov.br';
     const subject = encodeURIComponent('Assunto do e-mail');
     const body = encodeURIComponent('Corpo do e-mail');
@@ -20,8 +20,25 @@ export default function FaleDSPScreen() {
     });
   };
 
+  // Função para fazer uma chamada telefônica
+  const handlePressCall = () => {
+    const phoneNumber = '3139155650'; // Número de telefone sem formatação especial
+    const url = `tel:${phoneNumber}`;
+
+    Linking.canOpenURL(url)
+      .then((supported) => {
+        if (!supported) {
+          console.log('Não foi possível fazer a chamada');
+        } else {
+          return Linking.openURL(url);
+        }
+      })
+      .catch((err) => console.error('Ocorreu um erro:', err));
+  };
+
   const buttons: Button[] = [
-    { title: 'Email', route: handlePress, icon: 'book' },
+    { title: 'Email', route: handleEmailPress, icon: 'book' },
+    { title: 'Telefone', route: handlePressCall, icon: 'call' },
   ];
 
   return (

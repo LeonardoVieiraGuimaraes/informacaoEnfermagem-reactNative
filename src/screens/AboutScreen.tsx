@@ -10,7 +10,7 @@ export default function AboutScreen() {
           {'Bem Vindo ao A&G Enfermagem (Autonomia e Gestão na Enfermagem)'}
         </Text>
       </View>
-      <Text className="text-sm text-justify">
+      <Text className="text-sm text-justify p-2">
         {
           'Este é um instrumento para subsidiar o seu processo de trabalho por meio de informações gerais com o objetivo de apresentar as estratégias para alcançar o melhor nível de autonomia e contribuir com a gestão da enfermagem.\n'
         }
@@ -23,10 +23,27 @@ export default function AboutScreen() {
       </Text>
       <Text className="text-sm  text-center font-bold">{'\nApoio:'}</Text>
 
-      <Image
-        source={require('../assets/img/Logos2.jpg')}
-        style={{ transform: [{ scale: 0.8 }] }} // Reduz a imagem para 50% do tamanho original
-      />
+      <View className="items-center">
+        <Image
+          source={require('../assets/img/EERPSF.png')}
+          style={{
+            transform: [{ scale: 0.5 }],
+            marginBottom: -90,
+            marginTop: -50,
+          }} // Reduz a margem inferior para aproximar as imagens
+        />
+        <Image
+          source={require('../assets/img/MestradoSF.png')}
+          style={{ transform: [{ scale: 0.5 }], marginBottom: -90 }} // Reduz a margem inferior para aproximar as imagens
+        />
+        <Image
+          source={require('../assets/img/MinasGeraisSF.png')}
+          style={{
+            transform: [{ scale: 0.5 }],
+            marginBottom: -70,
+          }} // Reduz a margem inferior para aproximar as imagens
+        />
+      </View>
     </View>
   );
 }
