@@ -168,7 +168,7 @@ export default function StackRoutes() {
       <Stack.Screen
         name="EscalaAtividaEnfermagemScreen"
         component={EscalaAtividaEnfermagemScreen}
-        options={{ title: 'Escala de Ativdade de Enfermagem' }}
+        options={{ title: 'Escala de Ativdade' }}
       />
       <Stack.Screen
         name="parabens"
